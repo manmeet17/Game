@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="../css/style.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<div class="game-over">
+    <img src="/images/assets/game_over.png" alt="Game Over" width="684px" height="384px">
+    <span class="finalScore">{{finalScore}}</span>
+    <button class="okBtn" style="position: absolute; right: 0; bottom: 0;width: 200px" onclick="playAgain()">Play Again</button>
+</div>
+<div class="leader">
+    <ul class="leader-players list-group">
+        {{#each topScorrer}}
+        <li class="list-group-item"> {{this.name}}
+            <span class="float-right">
+                    <strong>{{this.personalBest}}</strong>
+                </span>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<img src="/images/assets/Controls.png" width="200px" height="100px" class="controls">
+<img src="/images/assets/logo.png" class="logo" width="200px" height="80px">
+
+<script>
+    function playAgain(){
+        let id=location.pathname.split("/");
+        location.href="/rules/"+id[id.length-1];
+    }
+</script>

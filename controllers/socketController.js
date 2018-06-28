@@ -49,12 +49,20 @@ module.exports = (io) => {
 
             let data = {
                 id: playerId,
-                score: playerScore
+                score: playerScore+(playerScore*(correct)/10)
             }
-            socket.emit('restart', correct);
+            socket.emit('restart', correct,data.score);
             socket.correct = 0;
             socket.attempted = 0;
             saveAttempt(data);
+        });
+
+        socket.on('game-over',(score,playerId) =>{
+            let data={
+                id: playerId,
+                score: score
+            }
+            saveAttempt(data)
         });
 
         var saveAttempt = (data) => {

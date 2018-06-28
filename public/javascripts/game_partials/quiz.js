@@ -6,7 +6,6 @@ let quiz = {
     },
 
     showNextQuestion: function () {
-        console.log(playerId);
         if (questions.length > i) {
             $('.qBody').text(questions[i].questionBody);
             $('label#fora').html('- <strong>' + questions[i].option_a + '</strong>');

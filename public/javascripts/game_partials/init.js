@@ -1,4 +1,4 @@
-$(document).on("initialize-game",function(){
+$(document).on("initialize-game", function () {
     stage = new createjs.Stage('game-holder');
     createjs.Touch.enable(stage);
     w = stage.canvas.width;
@@ -9,7 +9,7 @@ $(document).on("initialize-game",function(){
     loader.addEventListener("complete", handleComplete);
     loader.loadManifest(IMAGE_HOLDER, true, "../images/");
     loadSound();
-    
+
     function handleComplete(e) {
         var healthBarImg = loader.getResult("healthBar");
 
@@ -97,26 +97,26 @@ $(document).on("initialize-game",function(){
             }
         });
 
-        var thunderSprite=new createjs.SpriteSheet({
+        var thunderSprite = new createjs.SpriteSheet({
             framerate: 30,
             "images": [loader.getResult("thunder")],
-            "frames":{
+            "frames": {
                 "regX": 0,
                 "width": 684,
                 "regY": 0,
                 "height": 384,
                 "count": 40
             },
-            "animations":{
-                "blueSky":[0,"blueSky"],
-                "lightning1":[1,28,"lightning2",speed*0.06],
-                "lightning2":[1,28,"lightning3",speed*0.06],
-                "lightning3":[1,28,"blueSky",speed*0.06]
+            "animations": {
+                "blueSky": [0, "blueSky"],
+                "lightning1": [1, 28, "lightning2", speed * 0.06],
+                "lightning2": [1, 28, "lightning3", speed * 0.06],
+                "lightning3": [1, 28, "blueSky", speed * 0.06]
 
             }
         });
 
-        var guyWheelchair=new createjs.SpriteSheet({
+        var guyWheelchair = new createjs.SpriteSheet({
             framerate: 30,
             "images": [loader.getResult("guyWheelchair")],
             "frames": {
@@ -127,7 +127,7 @@ $(document).on("initialize-game",function(){
                 "count": 62
             },
             "animations": {
-                "move":[0,61,"move",speed*0.02]
+                "move": [0, 61, "move", speed * 0.02]
             }
         });
 
@@ -185,32 +185,32 @@ $(document).on("initialize-game",function(){
                 "shout": [1, 37, "move"],
                 "move": [106, 160, "move", speed * 0.05],
                 "jump": [38, 105, "move", speed * 0.025],
-                "hit":[164,224,"move",speed*0.04]
+                "hit": [164, 224, "move", speed * 0.04]
             }
         });
-        
-        thunder=new createjs.Sprite(thunderSprite,"blueSky");
+
+        thunder = new createjs.Sprite(thunderSprite, "blueSky");
         healthBarSprite = new createjs.Sprite(healthSprite, "s100");
         pogo = new createjs.Sprite(pogoStickSprite, "jumpUp");
-        pogo2=new createjs.Sprite(pogoStickSprite2,"jumpUp");
+        pogo2 = new createjs.Sprite(pogoStickSprite2, "jumpUp");
         chair = new createjs.Sprite(chairSprite, "move");
-        guy=new createjs.Sprite(guyWheelchair,"move");
+        guy = new createjs.Sprite(guyWheelchair, "move");
         chair.name = "chair";
         pogo.name = "pogo";
-        pogo2.name="pogo2";
+        pogo2.name = "pogo2";
         pogo.x = w;
         pogo.y = h - 130;
-        pogo2.x=w+50;
-        pogo2.y=h-180;
+        pogo2.x = w + 50;
+        pogo2.y = h - 180;
         potfunc();
         hitter(level);
-        stage.addChild(thunder, scorebg, buildingsBack, buildingsBack2, buildingsFront, buildingsFront2, trees, trees2, footPath, footPath2, mainRoad1, mainRoad2, carsUpperLane, carsUpperLane2, carsLowerLane, carsLowerLane2, pogo,pogo2, healthBarSprite, potHole, chair, text);
+        stage.addChild(thunder, scorebg, buildingsBack, buildingsBack2, buildingsFront, buildingsFront2, trees, trees2, footPath, footPath2, mainRoad1, mainRoad2, carsUpperLane, carsUpperLane2, carsLowerLane, carsLowerLane2, pogo, pogo2, healthBarSprite, potHole, chair, text);
 
         this.document.onkeydown = keyboardMove;
 
         stage.addEventListener("stagemousedown", handleJumpStart);
         createjs.Ticker.timingMode = createjs.Ticker.RAF;
-        if(gameStart){
+        if (gameStart) {
             createjs.Ticker.addEventListener("tick", tick);
         }
         if (!event.paused) {
@@ -251,41 +251,49 @@ $(document).on("initialize-game",function(){
     }
 
     function hitter(level) {
-        setTimeout(function(){
-            if(movingSpeed<8){
-                movingSpeed+=0.008;
-                level+=1;
+        setTimeout(function () {
+            if (movingSpeed < 8) {
+                movingSpeed += 0.008;
+                level += 1;
                 hitter(level);
             }
-        },1);
+        }, 1);
     }
 });
 
-$(document).on("initialize-socket",function(){
-    socket=io();
-    socket.on('fetchedQuestions',(questions,score) =>{
+$(document).on("initialize-socket", function () {
+    socket = io();
+    socket.on('fetchedQuestions', (questions, score) => {
         $("#game").css('display', 'none');
         $(".questions").css('display', 'block');
         console.log(questions.length);
-        quiz.loadQuestions(questions,score);
+        quiz.loadQuestions(questions, score);
         quiz.showNextQuestion();
     });
 
-    socket.on("mismatch",() =>{
+    socket.on("mismatch", () => {
         window.alert("There was a discrepancy");
     });
 
-    socket.on('answer',(data)=>{
+    socket.on('answer', (data) => {
         quiz.checkedAnswer(data);
     });
 
-    socket.on('restart',(correct) =>{
-        $('#game').css('display','block');
+    socket.on('restart', (correct, score) => {
+        $('#game').css('display', 'block');
         $(".questions").css('display', 'none');
-        currentHealth=10*correct;
+        currentHealth = 10 * correct;
+        changeScore(score);
         var healthTo = (currentHealth).toString();
         healthBarSprite.gotoAndStop(healthTo);
-        createjs.Sound.volume=1;
-        gamePaused=false;
+        createjs.Sound.volume = 1;
+        gamePaused = false;
+        cycles++;
+        console.log(cycles);
+        if (cycles == 2) {
+            gamePaused = true;
+            socket.emit('game-over', score, playerId);
+            location.href = "/game-over/" + playerId;
+        }
     });
 });

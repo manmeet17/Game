@@ -8,6 +8,7 @@ var questions;
 var i = 0;
 var correct = 0;
 var playerId;
+var cycles=0;
 var gamePaused=false;
 var playerScore=0;
 var reducedHealthFlag1 = false;

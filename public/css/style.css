@@ -57,7 +57,7 @@ canvas {
     width: 30%;
 }
 
-.instructions,.landing {
+.instructions,.landing,.game-over {
     position: absolute;
     left: 62px;
     top: 80px;
@@ -207,4 +207,12 @@ form,.okBtn{
 
 .landing .row{
     height: 100%;
+}
+
+.finalScore{
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    top: 60%;
+    left: 60%;
 }

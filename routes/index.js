@@ -21,37 +21,6 @@ router.get('/', function (req, res, next) {
 
 });
 
-// router.get('/rules/:email', (req, res) => {
-//   userController.getLeaderboard((err, leaders) => {
-//     if (err) {
-//       console.log("Error getting leaderboard");
-//       console.log(err);
-//     } else {
-//       res.status(200).render('index', {
-//         title: 'Save the Blood',
-//         description: 'Some random text',
-//         topScorrer: leaders
-//       });
-//     }
-//   });
-// });
-
-// router.get('/leader', (req, res) => {
-//   userController.getLeaderboard((err, leaders) => {
-//     if (err) {
-//       return res.status(400).send({
-//         success: false,
-//         error: JSON.stringify(err)
-//       })
-//     }
-//     res.status(200).send({
-//       leaders
-//     });
-//   });
-// });
-
-
-
 router.post('/login', (req, res) => {
   console.log(req.body);
   const {
@@ -59,7 +28,7 @@ router.post('/login', (req, res) => {
     email,
     serviceLine,
   } = req.body;
-  globalData=email;
+  globalData = email;
   userController.getUser(email, (err, player) => {
     if (err) console.log("User Not found");
     if (player) {
@@ -86,12 +55,12 @@ router.post('/login', (req, res) => {
 });
 
 router.get('/rules/:id', (req, res) => {
-  if(!(req.params) || !(req.params.id)){
+  if (!(req.params) || !(req.params.id)) {
     console.log("Not found");
     return res.redirect('/abc');
   }
-  let id=req.params.id;
-  console.log("Id is: "+id);
+  let id = req.params.id;
+  console.log("Id is: " + id);
   userController.getLeaderboard((err, leaders) => {
     if (err) {
       console.log("Error getting leaderboard");
@@ -99,7 +68,6 @@ router.get('/rules/:id', (req, res) => {
     } else {
       res.status(200).render('index', {
         title: 'Save the Blood',
-        description: 'Some random text',
         topScorrer: leaders,
         userId: id
       });
@@ -117,7 +85,6 @@ router.post('/question', (req, res) => {
     ans,
     hint
   } = req.body;
-  console.log(qBody);
   questionController.createQuestion(qBody, a, b, c, d, ans, hint, (err, val, question) => {
     if (err) {
       return res.status(400).json({
@@ -130,10 +97,22 @@ router.post('/question', (req, res) => {
       });
     }
   });
-
 });
 
-
+router.get('/game-over/:id', (req, res) => {
+  let id = req.params.id;
+  userController.getLeaderboard((err, leaders) => {
+    if (err) return console.log("Error Getting leaderboard");
+    userController.getUserById(id, (err, user) => {
+      let lastScore = user.score[user.score.length - 1];
+      res.status(200).render('game-over', {
+        title: 'Save the blood',
+        topScorrer: leaders,
+        finalScore: lastScore
+      });
+    });
+  });
+});
 
 module.exports = {
   router
