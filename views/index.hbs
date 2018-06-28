@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="../javascripts/game_partials/globals.js"></script>
+    <script src="../javascripts/game_partials/tweens.js"></script>
+    <script src="../javascripts/game_partials/events.js"></script>
+    <script src="../javascripts/game_partials/tick.js"></script>
+    <script src="../javascripts/game_partials/init.js"></script>
+    <script src="../javascripts/game_partials/quiz.js"></script>
+    <script src="../javascripts/client.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+
+</head>
+
+<body>
+    <img src="../images/assets/game_name.png" class="gameName">
+    <div id="game">
+        <h3 id="scoreP" class="hide">Game Over &nbsp;
+            <span id="score"></span>
+        </h3>
+        <canvas id="game-holder" width="683" height="384" data-id="{{userId}}"></canvas>
+    </div>
+    <img src="../images/assets/instructions.png" class="instructions">
+    <button class="playBtn">Play Game</button>
+    <div class="leader">
+        <ul class="leader-players list-group">
+            {{#each topScorrer}}
+            <li class="list-group-item"> {{this.name}}
+                <span class="float-right">
+                    <strong>{{this.personalBest}}</strong>
+                </span>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="questions">
+        <div class="entity">
+            <div class="qBody">
+            </div>
+            <img width="50px" height="50px" src="../images/assets/0.png" class="questionCounter" alt="">
+            <br>
+            <div class="options">
+            <span class="option_a">
+                <input id="a" value="a" name="q" type="radio">
+            <label id="fora"></label>
+            </span>
+            <br>
+            <span class="option_b">
+                <input id="b" value="b" name="q" type="radio">
+            <label id="forb"></label>
+            </span>
+            <br>
+            <span class="option_c">
+                <input id="c" value="c" name="q" type="radio">
+            <label id="forc"></label>
+            </span>
+            <br>
+            <span class="option_d">
+                <input id="d" value="d" name="q" type="radio">
+            <label id="ford"></label>
+            </span>
+            <br>
+            </div>
+            <button class="hintBtn">Hint!</button>
+            <p class="hint"></p>
+            <br>
+            <button id="answerQuiz" type="submit" onclick="quiz.checkAnswer()">Submit</button>
+            <span class="correct"></span>
+        </div>
+    </div>
+    <img src="../images/assets/Controls.png" width="200px" height="100px" class="controls">
+    <img src="../images/assets/logo.png" class="logo" width="200px" height="80px">
+</body>
+
+</html>

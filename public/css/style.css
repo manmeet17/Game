@@ -1,0 +1,210 @@
+html {
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 90vh;
+    position: relative;
+    background-image: url("../images/assets/background.png");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 100%;
+}
+
+#game {
+    width: 683px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.logo {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.hide {
+    display: none
+}
+
+.controls {
+    position: absolute;
+    bottom: -32px;
+    left: 64%;
+}
+
+canvas {
+    background: transparent;
+    position: absolute;
+    top: 80px;
+    left: 5%;
+}
+
+.leader {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    width: 30%;
+    height: 400px;
+    background-color: white;
+}
+
+.gameName {
+    position: absolute;
+    left: 15%;
+    width: 30%;
+}
+
+.instructions,.landing {
+    position: absolute;
+    left: 62px;
+    top: 80px;
+    width: 684px !important;
+    height: 384px !important;
+}
+
+.col {
+    padding: 0 !important;
+}
+
+form {
+    padding: 20px;
+}
+
+.okBtn,
+.playBtn,
+#answerQuiz {
+    background-color: #92D400;
+    color: white;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+    float: right;
+    opacity: 1;
+}
+
+.hintBtn {
+    background-color: #fff;
+    color: gray;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+    float: left;
+    opacity: 1;
+}
+
+.playBtn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+
+.questions {
+    display: none;
+}
+
+.overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.entity {
+    position: relative;
+    min-height: 384px;
+    width: 684px !important;
+    top: 80px;
+    left: 40px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+/* .entity input{
+    position: absolute;
+    left: 20%;
+    margin-bottom: 20px;
+} */
+
+.entity label{
+    cursor: pointer;
+} 
+
+.questionCounter {
+    position: absolute;
+    right: 20px;
+    top: -15%;
+}
+
+.hintBtn {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.qBody{
+    padding: 15px 16px;
+    min-width: 684px;
+    background-color: #ccc;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.options{
+    position: absolute;
+    top: 35%;
+    left: 10%
+}
+
+#answerQuiz {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+.correctAns{
+    color: #92D400;
+}
+
+.wrongAns{
+    color: red;
+}
+
+.options span{
+    white-space: nowrap;
+}
+
+.card{
+    background-color: #2a2a2a;
+}
+
+form,.okBtn{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.okBtn{
+    width: 45%;
+    height: 40px;
+}
+
+.form-group label{
+    color: white;
+    margin-bottom: 0 !important;
+}
+
+.landing .row{
+    height: 100%;
+}

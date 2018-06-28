@@ -1,0 +1,79 @@
+<img src="images/assets/game_name.png" class="gameName">
+<div class="landing container main custom-form">
+    <div class="row">
+        <div class="col card default-z login">
+            <p class="text-center" style="color: white;font-size: 25px;margin-top: 5px;">Please provide your information</p>
+            <form id="credForm">
+                {{!-- Name --}}
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" required autocomplete="off" maxlength="20" class="form-control" data-params="Player_Name" id="name" placeholder="Full Name">
+                </div>
+                {{!-- Email --}}
+                <div class="form-group">
+                    <label for="name">Email</label>
+                    <input type="email" required autocomplete="off" class="form-control" data-params="Player_Email" id="email" placeholder="Email Address">
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceLine">Service Line</label>
+                    <select class="form-control" id="serviceLine">
+                        <option selected disabled>Please Choose Service Line</option>
+                        <option>Deloitte Digital</option>
+                        <option>SAP</option>
+                        <option>Oracle</option>
+                        <option>System Integration</option>
+                    </select>
+                </div>
+            </form>
+
+            <button class="okBtn" class="submit">
+                Start Game
+            </button>
+        </div>
+    </div>
+</div>
+<div class="leader">
+    <ul class="leader-players list-group">
+        {{#each topScorrer}}
+        <li class="list-group-item"> {{this.name}}
+            <span class="float-right">
+                <strong>{{this.personalBest}}</strong>
+            </span>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<img src="images/assets/Controls.png" width="200px" height="100px" class="controls">
+<img src="images/assets/logo.png" class="logo" width="200px" height="80px">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+
+<script>
+    $('.okBtn').click(function (event) {
+        event.preventDefault();
+        let name = $("#name").val();
+        let email = $("#email").val();
+        let serviceLine = $("#serviceLine").val();
+        let data = {
+            name, email, serviceLine
+        };
+        $.ajax({
+            url: '/login',
+            data: data,
+            method: 'POST',
+            cache: false,
+            success: function (data) {
+                location.href = "/rules/" + data.player._id;
+            },
+            error: function (err) {
+                location.href = "/";
+                console.log(err);
+            }
+        })
+    });
+</script>
