@@ -9,12 +9,14 @@
     <button class="okBtn" style="position: absolute; right: 0; bottom: 0;width: 200px" onclick="playAgain()">Play Again</button>
 </div>
 <div class="leader">
+    <img src="../images/assets/leader.png" class="leader-pic">
+
     <ul class="leader-players list-group">
         {{#each topScorrer}}
         <li class="list-group-item"> {{this.name}}
             <span class="float-right">
-                    <strong>{{this.personalBest}}</strong>
-                </span>
+                <strong>{{this.personalBest}}</strong>
+            </span>
         </li>
         {{/each}}
     </ul>
@@ -23,8 +25,8 @@
 <img src="/images/assets/logo.png" class="logo" width="200px" height="80px">
 
 <script>
-    function playAgain(){
-        let id=location.pathname.split("/");
-        location.href="/rules/"+id[id.length-1];
+    function playAgain() {
+        let id = location.pathname.split("/");
+        location.href = "/rules/" + id[id.length - 1];
     }
 </script>

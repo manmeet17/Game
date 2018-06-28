@@ -8,10 +8,10 @@ let quiz = {
     showNextQuestion: function () {
         if (questions.length > i) {
             $('.qBody').text(questions[i].questionBody);
-            $('label#fora').html('- <strong>' + questions[i].option_a + '</strong>');
-            $('label#forb').html('- <strong>' + questions[i].option_b + '</strong>');
-            $('label#forc').html('- <strong>' + questions[i].option_c + '</strong>');
-            $('label#ford').html('- <strong>' + questions[i].option_d + '</strong>');
+            $('label#fora').html('<strong>' + questions[i].option_a + '</strong>');
+            $('label#forb').html('<strong>' + questions[i].option_b + '</strong>');
+            $('label#forc').html('<strong>' + questions[i].option_c + '</strong>');
+            $('label#ford').html('<strong>' + questions[i].option_d + '</strong>');
 
             $('label').click(function(e){
                 e.preventDefault()

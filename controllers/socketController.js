@@ -46,15 +46,15 @@ module.exports = (io) => {
             console.log("Quiz Done: " + correct + " " + socket.correct);
             console.log("Attempts: " + socket.attempted);
             console.log("Id is: " + playerId);
-
+            console.log("Score Before: "+playerScore);
             let data = {
                 id: playerId,
-                score: playerScore+(playerScore*(correct)/10)
+                score: Math.floor(playerScore+(playerScore*(correct)/10))
             }
+            console.log("Score Before: "+data.score);
             socket.emit('restart', correct,data.score);
             socket.correct = 0;
             socket.attempted = 0;
-            saveAttempt(data);
         });
 
         socket.on('game-over',(score,playerId) =>{
@@ -62,7 +62,7 @@ module.exports = (io) => {
                 id: playerId,
                 score: score
             }
-            saveAttempt(data)
+            saveAttempt(data);
         });
 
         var saveAttempt = (data) => {

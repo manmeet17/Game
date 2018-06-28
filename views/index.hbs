@@ -35,6 +35,7 @@
     <img src="../images/assets/instructions.png" class="instructions">
     <button class="playBtn">Play Game</button>
     <div class="leader">
+        <img src="../images/assets/leader.png" class="leader-pic">
         <ul class="leader-players list-group">
             {{#each topScorrer}}
             <li class="list-group-item"> {{this.name}}
@@ -52,26 +53,26 @@
             <img width="50px" height="50px" src="../images/assets/0.png" class="questionCounter" alt="">
             <br>
             <div class="options">
-            <span class="option_a">
-                <input id="a" value="a" name="q" type="radio">
-            <label id="fora"></label>
-            </span>
-            <br>
-            <span class="option_b">
-                <input id="b" value="b" name="q" type="radio">
-            <label id="forb"></label>
-            </span>
-            <br>
-            <span class="option_c">
-                <input id="c" value="c" name="q" type="radio">
-            <label id="forc"></label>
-            </span>
-            <br>
-            <span class="option_d">
-                <input id="d" value="d" name="q" type="radio">
-            <label id="ford"></label>
-            </span>
-            <br>
+                <span class="option_a">
+                    <input id="a" value="a" name="q" type="radio">
+                    <label id="fora"></label>
+                </span>
+                <br>
+                <span class="option_b">
+                    <input id="b" value="b" name="q" type="radio">
+                    <label id="forb"></label>
+                </span>
+                <br>
+                <span class="option_c">
+                    <input id="c" value="c" name="q" type="radio">
+                    <label id="forc"></label>
+                </span>
+                <br>
+                <span class="option_d">
+                    <input id="d" value="d" name="q" type="radio">
+                    <label id="ford"></label>
+                </span>
+                <br>
             </div>
             <button class="hintBtn">Hint!</button>
             <p class="hint"></p>
