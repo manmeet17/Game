@@ -22,7 +22,12 @@ let quiz = {
 
             $('.hintBtn').click(function (e) {
                 e.preventDefault();
-                $('.hint').text(questions[i].hint);
+                let hint=questions[i].hint;
+                console.log("Hint : "+hint);
+                if(hint.length!=0)
+                    $('.hint').text(hint);
+                else
+                $('.hint').text("Sorry No Hint Available");
             });
         } else {
             socket.emit("quiz-done", correct, playerScore, playerId);
@@ -63,6 +68,7 @@ let quiz = {
     },
 
     clearOption: function () {
+        console.log("I value now: "+i);
         $('.questionCounter').attr("src", "../images/assets/" + i + ".png");
         $('input[type="radio"]:checked').prop('checked', false);
         $('.qBody').text('');

@@ -1,5 +1,6 @@
 const User=require('../models/user');
 var mongoose=require('mongoose');
+const utils=require('../utils');
 
 function createUser(name,email,serviceLine,cb){
     let user=new User({
@@ -56,6 +57,7 @@ function getLeaderboard(cb){
             console.log("Error getting leaderboard");
             console.log(err);
         }
+        result=utils.limitTo(7,result);
         return cb(null,result);
     }); 
 }

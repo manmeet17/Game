@@ -47,7 +47,6 @@ canvas {
     right: 5%;
     top: 10%;
     width: 30%;
-    height: 400px;
     background-color: white;
     z-index: -1;
 }
@@ -55,9 +54,9 @@ canvas {
 .leader-pic{
     position: absolute;
     z-index: -10;
-    width: 745px;
+    width: 730px;
     top: -210px;
-    left: -210px;
+    left: -198px;
 }
 
 .list-group-item {
@@ -75,7 +74,8 @@ canvas {
 }
 
 .list-group{
-    margin-top: 55px;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 
 .gameName {
@@ -96,9 +96,6 @@ canvas {
     padding: 0 !important;
 }
 
-form {
-    padding: 20px;
-}
 
 .okBtn,
 .playBtn,
@@ -178,7 +175,7 @@ form {
 
 .hintBtn {
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
     left: 10px;
 }
 
@@ -199,7 +196,7 @@ form {
 
 #answerQuiz {
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
     right: 10px;
 }
 
@@ -219,14 +216,16 @@ form {
     background-color: #2a2a2a;
 }
 
-form,.okBtn{
+form{
     width: 50%;
     margin: 0 auto;
 }
 
 .okBtn{
-    width: 45%;
+    width: 50%;
     height: 40px;
+    position: absolute;
+    bottom: 0;
 }
 
 .form-group label{
@@ -244,4 +243,19 @@ form,.okBtn{
     position: absolute;
     top: 60%;
     left: 60%;
+}
+
+.form-error{
+    color: red;
+}
+
+.landing{
+    height: 407px !important;
+}
+
+.hint{
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
 }

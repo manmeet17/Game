@@ -40,7 +40,7 @@ function checkAnswer(id,selectedAnswer,cb){
         if(err) return cb(err);
         let resp={
             answeredCorrect: false,
-            correctOption: ques['correctAnswer'] 
+            correctOption: ques['correctAnswer'].toLowerCase()
         }
 
         if(resp.correctOption==selectedAnswer){
