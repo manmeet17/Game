@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose=require('mongoose');
 var {router} = require('./routes/index');
-var exphbs=require('express-handlebars');
+var helmet=require('helmet');
 var sockets=require('socket.io');
 var allSockets=require('./controllers/socketController');
 require("dotenv").config();
@@ -14,7 +14,7 @@ var io=sockets();
 app.io=io;
 
 
-mongoose.connect(process.env.DATABASE_URL).then(() =>{
+mongoose.connect(process.env.LOCAL_DATABASE_URL).then(() =>{
   console.log("Connected to db");
 })
 .catch((err) => console.log("Error connecting to Database: "+err));
@@ -23,6 +23,7 @@ mongoose.connect(process.env.DATABASE_URL).then(() =>{
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(logger('dev'));
+app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());

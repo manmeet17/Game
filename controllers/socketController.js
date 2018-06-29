@@ -62,16 +62,21 @@ module.exports = (io) => {
                 id: playerId,
                 score: score
             }
-            saveAttempt(data);
+            saveAttempt(data).then((resp)=>{
+                socket.emit('show-score',resp);
+            }).catch((err) => console.log("Error Updating database"+err));
         });
 
         var saveAttempt = (data) => {
-            userController.getUserById(data.id, (err, user) => {
-                let score = user.score;
-                score.push(data.score);
-                let newMaxScore = _.max(score);
-                userController.updateUser(data.id, score, newMaxScore, (err, resp) => {
-                    if (err) return console.log("Error updating record");
+            return new Promise((resolve,reject) =>{
+                userController.getUserById(data.id, (err, user) => {
+                    let score = user.score;
+                    score.push(data.score);
+                    let newMaxScore = _.max(score);
+                    userController.updateUser(data.id, score, newMaxScore, (err, resp) => {
+                        if (err) return reject(err);
+                        else resolve(resp);
+                    });
                 });
             });
         };

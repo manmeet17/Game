@@ -293,7 +293,11 @@ $(document).on("initialize-socket", function () {
         if (cycles == 2) {
             gamePaused = true;
             socket.emit('game-over', score, playerId);
-            location.href = "/game-over/" + playerId;
         }
+    });
+
+    socket.on('show-score',(user)=>{
+        location.href = "/game-over/" + playerId;
+        console.log(user);
     });
 });

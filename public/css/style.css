@@ -70,7 +70,7 @@ canvas {
     color: #0b3844;
 }
 
-.list-group:nth-child(-n+3){
+.list-group-item:nth-child(-n+3){
     color: white;
 }
 
