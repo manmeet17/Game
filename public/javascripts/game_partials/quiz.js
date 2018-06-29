@@ -64,7 +64,7 @@ let quiz = {
             $("#for" + $selectedOption).find("strong").removeClass('wrongAns');
             $("#for" + cOpt).find("strong").removeClass('correctAns');
             quiz.clearOption();
-        },1000);
+        },500);
     },
 
     clearOption: function () {

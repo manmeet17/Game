@@ -46,7 +46,7 @@ canvas {
     position: absolute;
     right: 5%;
     top: 10%;
-    width: 30%;
+    width: 30vw;
     background-color: white;
     z-index: -1;
 }
@@ -88,8 +88,8 @@ canvas {
     position: absolute;
     left: 62px;
     top: 80px;
-    width: 684px !important;
-    height: 384px !important;
+    width: 53vw !important;
+    height: 65vh !important
 }
 
 .col {
@@ -250,7 +250,8 @@ form{
 }
 
 .landing{
-    height: 407px !important;
+    width: 50vw !important;
+    height: 70vh !important;
 }
 
 .hint{
