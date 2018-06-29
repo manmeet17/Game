@@ -14,7 +14,7 @@ var io=sockets();
 app.io=io;
 
 
-mongoose.connect(process.env.LOCAL_DATABASE_URL).then(() =>{
+mongoose.connect(process.env.DATABASE_URL).then(() =>{
   console.log("Connected to db");
 })
 .catch((err) => console.log("Error connecting to Database: "+err));
