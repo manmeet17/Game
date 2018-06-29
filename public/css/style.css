@@ -260,3 +260,11 @@ form{
     bottom: 0;
     left: 15%;
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
+screen and (min-device-pixel-ratio : 1.5) { 
+    .instructions,.landing,.game-over{
+        width: 53vw;
+        height: 50vh;
+    }
+}
