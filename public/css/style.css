@@ -261,8 +261,9 @@ form{
     left: 15%;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
-screen and (min-device-pixel-ratio : 1.5) { 
+@media 
+(-webkit-min-device-pixel-ratio: 1.25), 
+(min-resolution: 120dpi){ 
     .instructions,.landing,.game-over{
         width: 53vw;
         height: 50vh;
