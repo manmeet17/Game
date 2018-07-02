@@ -1,4 +1,4 @@
-let quiz = {
+var quiz = {
     loadQuestions: function (data, score) {
         questions = data;
         playerScore = score;
@@ -15,14 +15,14 @@ let quiz = {
 
             $('label').click(function(e){
                 e.preventDefault()
-                let it=$(this).attr("id");
+                var it=$(this).attr("id");
                 console.log(it[it.length-1]);
                 $('input:radio[id='+it[it.length-1]+']').prop('checked',true);
             });
 
             $('.hintBtn').click(function (e) {
                 e.preventDefault();
-                let hint=questions[i].hint;
+                var hint=questions[i].hint;
                 console.log("Hint : "+hint);
                 if(hint.length!=0)
                     $('.hint').text(hint);
@@ -50,7 +50,7 @@ let quiz = {
 
     checkedAnswer: function (data) {
         i++;
-        let cOpt = data.correctOption;
+        var cOpt = data.correctOption;
         var $selectedOption = $("input[type='radio']:checked").val();
         if (data.answeredCorrect) {
             correct++;

@@ -249,8 +249,7 @@ $(document).on("initialize-game", function () {
 
 $(document).on("initialize-socket", function () {
     socket = io();
-    console.log("Socket: "+socket);
-    socket.on('fetchedQuestions', (questions, score) => {
+    socket.on('fetchedQuestions', function(questions, score){
         $("#game").css('display', 'none');
         $(".questions").css('display', 'block');
         console.log(questions.length);
@@ -258,15 +257,15 @@ $(document).on("initialize-socket", function () {
         quiz.showNextQuestion();
     });
 
-    socket.on("mismatch", () => {
+    socket.on("mismatch", function()  {
         window.alert("There was a discrepancy");
     });
 
-    socket.on('answer', (data) => {
+    socket.on('answer', function(data)  {
         quiz.checkedAnswer(data);
     });
 
-    socket.on('restart', (correct, score) => {
+    socket.on('restart', function(correct, score)  {
         $('#game').css('display', 'block');
         $(".questions").css('display', 'none');
         currentHealth = 10 * correct;
@@ -283,7 +282,7 @@ $(document).on("initialize-socket", function () {
         }
     });
 
-    socket.on('show-score',(user)=>{
+    socket.on('show-score',function(user){
         location.href = "/game-over/" + playerId;
         console.log(user);
     });
