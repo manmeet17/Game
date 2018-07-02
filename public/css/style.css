@@ -277,6 +277,6 @@ form{
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
   .leader-pic{
-      top: -32.5vw;
+      top: -16.5vw;
   }  
 }
