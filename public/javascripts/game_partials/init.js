@@ -1,4 +1,5 @@
 $(document).on("initialize-game", function () {
+    console.log('Initialized Game'+gameStart);
     stage = new createjs.Stage('game-holder');
     createjs.Touch.enable(stage);
     w = stage.canvas.width;
@@ -8,7 +9,6 @@ $(document).on("initialize-game", function () {
     loader = new createjs.LoadQueue(false);
     loader.addEventListener("complete", handleComplete);
     loader.loadManifest(IMAGE_HOLDER, true, "../images/");
-    loadSound();
 
     function handleComplete(e) {
         var healthBarImg = loader.getResult("healthBar");
@@ -203,16 +203,12 @@ $(document).on("initialize-game", function () {
         pogo2.x = w + 50;
         pogo2.y = h - 180;
         potfunc();
-        hitter(level);
         stage.addChild(thunder, scorebg, buildingsBack, buildingsBack2, buildingsFront, buildingsFront2, trees, trees2, footPath, footPath2, mainRoad1, mainRoad2, carsUpperLane, carsUpperLane2, carsLowerLane, carsLowerLane2, pogo, pogo2, healthBarSprite, potHole, chair, text);
 
         this.document.onkeydown = keyboardMove;
-
-        stage.addEventListener("stagemousedown", handleJumpStart);
+        
+        // stage.addEventListener("stagemousedown", handleJumpStart);
         createjs.Ticker.timingMode = createjs.Ticker.RAF;
-        if (gameStart) {
-            createjs.Ticker.addEventListener("tick", tick);
-        }
         if (!event.paused) {
             initTweens();
         }
@@ -249,20 +245,11 @@ $(document).on("initialize-game", function () {
         potHole.name = "potHole";
         console.log("Initial x: " + potHole.x);
     }
-
-    function hitter(level) {
-        setTimeout(function () {
-            if (movingSpeed < 8) {
-                movingSpeed += 0.008;
-                level += 1;
-                hitter(level);
-            }
-        }, 1);
-    }
 });
 
 $(document).on("initialize-socket", function () {
     socket = io();
+    console.log("Socket: "+socket);
     socket.on('fetchedQuestions', (questions, score) => {
         $("#game").css('display', 'none');
         $(".questions").css('display', 'block');
@@ -301,3 +288,19 @@ $(document).on("initialize-socket", function () {
         console.log(user);
     });
 });
+
+$(document).on('fire-game',function(e){
+        createjs.Ticker.addEventListener("tick", tick);
+        loadSound();
+        hitter(level);
+});
+
+function hitter(level) {
+    setTimeout(function () {
+        if (movingSpeed < 8) {
+            movingSpeed += 0.008;
+            level += 1;
+            hitter(level);
+        }
+    }, 1);
+}

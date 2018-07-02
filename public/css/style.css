@@ -94,6 +94,10 @@ canvas {
     height: 65vh !important
 }
 
+.instructions img, .game-over img{
+    max-width: 100%;
+}
+
 .col {
     padding: 0 !important;
 }
@@ -126,9 +130,9 @@ canvas {
 }
 
 .playBtn {
-    position: absolute;
-    top: 80%;
-    left: 50%;
+    margin: -5% 0 0 0;
+    position: relative;
+    z-index: 9999;
 }
 
 .questions {

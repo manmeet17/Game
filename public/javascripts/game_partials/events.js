@@ -1,4 +1,5 @@
 function keyboardMove(event) {
+    console.log(event);
     if (event.keyCode == 38 && chair.y > -35) {
         chair.y -= 35;
         if (chair.y == -35)
@@ -21,12 +22,6 @@ function keyboardMove(event) {
         //     console.log(currentChannel);
         // }
         console.log(currentChannel);
-    }
-
-    if (event.keyCode == 17 && chair.currentAnimation != "jump" && pogo.currentAnimation != "jump-combine") {
-        chair.gotoAndPlay("shout");
-        if (pogo.x > 0 && pogo.x < w && pogo.currentAnimation != "stand-back")
-            pogo.gotoAndPlay("jump-combine");
     }
 }
 
