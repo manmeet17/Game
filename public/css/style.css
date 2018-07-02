@@ -48,7 +48,7 @@ canvas {
     position: absolute;
     right: 5%;
     top: 10%;
-    width: 30vw;
+    width: 25vw;
     background-color: white;
     z-index: -1;
 }
@@ -56,9 +56,9 @@ canvas {
 .leader-pic{
     position: absolute;
     z-index: -10;
-    width: 730px;
-    top: -210px;
-    left: -198px;
+    width: 55vw;
+    top: -34vh;
+    left: -16vw;
 }
 
 .list-group-item {
