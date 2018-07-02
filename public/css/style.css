@@ -38,8 +38,10 @@ body {
 canvas {
     background: transparent;
     position: absolute;
-    top: 80px;
+    top: 15%;
     left: 5%;
+    width: 684px;
+    height: 384px;
 }
 
 .leader {
@@ -146,8 +148,8 @@ canvas {
 
 .entity {
     position: relative;
-    min-height: 384px;
-    width: 684px !important;
+    min-height: 65vh;
+    width: 55vw !important;
     top: 80px;
     left: 40px;
     background-color: black;
@@ -181,7 +183,7 @@ canvas {
 
 .qBody{
     padding: 15px 16px;
-    min-width: 684px;
+    min-width: 55vw;
     background-color: #ccc;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

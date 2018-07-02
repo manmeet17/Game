@@ -59,7 +59,13 @@
 
 <script>
     $.validate({
-        lang: 'es'
+        form: "#credForm",
+        onError: function($form){
+            $('.okBtn').prop('disabled',true);
+        },
+        onSuccess: function($form){
+            $('.okBtn').prop('disabled',false);
+        }
     })
     $('.okBtn').click(function (event) {
         event.preventDefault();

@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose=require('mongoose');
 var {router} = require('./routes/index');
+var favicon = require('serve-favicon')
 var helmet=require('helmet');
 var sockets=require('socket.io');
 var allSockets=require('./controllers/socketController');
@@ -28,7 +29,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
+app.use(favicon(path.join(__dirname, 'public', 'images','favicon.ico')));
+
 
 app.use('/', router);
 
