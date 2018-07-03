@@ -1,7 +1,7 @@
 <img src="images/assets/game_name.png" class="gameName">
 <div class="landing container main custom-form">
     <div class="row">
-        <div class="col card default-z login">
+        <div class="col card default-z login" style="background-color: #2a2a2a;">
             <p class="text-center" style="color: white;font-size: 25px;margin-top: 5px;">Please provide your information</p>
             <form id="credForm">
                 {{!-- Name --}}
@@ -36,7 +36,7 @@
     </div>
 </div>
 <div class="leader">
-    <img src="images/assets/leader.png" class="leader-pic">
+    <h2 class="text-center">Leaderboard</h2>
     <ul class="leader-players list-group">
         {{#each topScorrer}}
         <li class="list-group-item"> {{this.name}}
@@ -54,7 +54,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/style.css">
+{{!-- <link rel="stylesheet" href="css/style.css"> --}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
 
 <script>

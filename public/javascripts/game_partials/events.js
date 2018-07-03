@@ -1,5 +1,4 @@
 function keyboardMove(event) {
-    console.log(event);
     if (event.keyCode == 38 && chair.y > -35) {
         chair.y -= 35;
         if (chair.y == -35)

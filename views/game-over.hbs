@@ -1,9 +1,8 @@
-<link rel="stylesheet" href="../css/style.css">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    
+
 <img src="../images/assets/game_name.png" class="gameName">
 <div class="game-over">
     <img src="/images/assets/game_over.png" alt="Game Over">
@@ -11,8 +10,7 @@
     <button class="okBtn" style="position: absolute; right: 1%; bottom: 4%;width: 200px" onclick="playAgain()">Play Again</button>
 </div>
 <div class="leader">
-    <img src="../images/assets/leader.png" class="leader-pic">
-
+    <h2 class="text-center">Leaderboard</h2>
     <ul class="leader-players list-group">
         {{#each topScorrer}}
         <li class="list-group-item"> {{this.name}}

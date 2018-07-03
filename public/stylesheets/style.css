@@ -19,6 +19,18 @@ body {
     margin-top: 20px;
 }
 
+.loader {
+    visibility: hidden;
+}
+
+.loader img {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .logo {
     position: absolute;
     right: 10px;
@@ -49,35 +61,63 @@ canvas {
     right: 5%;
     top: 10%;
     width: 25vw;
+    min-height: 30vh;
+    margin: 0 !important;
     background-color: white;
     z-index: -1;
 }
 
-.leader-pic{
+.leader h2 {
+    font-weight: bold;
+    color: cadetblue;
+}
+
+.leader-pic {
     position: absolute;
     z-index: -10;
-    width: 55vw;
-    top: -34vh;
-    left: -16vw;
+    top: 0;
+    left: 0;
+    max-width: 100%;
 }
 
 .list-group-item {
     position: relative;
     display: block;
     padding: .75rem 1.25rem;
-    margin-bottom: -1px;
-    background-color: transparent !important; 
+    margin-bottom: 5px !important;
+    background-color: transparent !important;
     border: 0 !important;
     color: #0b3844;
 }
 
-.list-group-item:nth-child(-n+3){
+.list-group-item:nth-child(1) {
     color: white;
+    background-color: #f1b40099 !important;
+    min-width: calc(100% + 20px);
+    margin-left: -10px;
+    webkit-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.82);
 }
 
-.list-group{
-    margin-top: 50px;
-    margin-left: 10px;
+.list-group-item:nth-child(2) {
+    color: white;
+    background-color: #b5b8bc !important;
+    min-width: calc(100% + 20px);
+    margin-left: -10px;
+    webkit-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.82);
+}
+
+.list-group-item:nth-child(3) {
+    color: white;
+    min-width: calc(100% + 20px);
+    margin-left: -10px;
+    background-color: #79632199 !important;
+    webkit-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.82);
 }
 
 .gameName {
@@ -86,7 +126,10 @@ canvas {
     width: 30%;
 }
 
-.instructions,.landing,.game-over {
+.instructions,
+.landing,
+.game-over,
+.loader {
     position: absolute;
     left: 62px;
     top: 80px;
@@ -94,14 +137,14 @@ canvas {
     height: 65vh !important
 }
 
-.instructions img, .game-over img{
+.instructions img,
+.game-over img {
     max-width: 100%;
 }
 
 .col {
     padding: 0 !important;
 }
-
 
 .okBtn,
 .playBtn,
@@ -167,11 +210,11 @@ canvas {
     margin-bottom: 20px;
 } */
 
-.entity label{
+.entity label {
     cursor: pointer;
     white-space: normal;
     width: 95%;
-} 
+}
 
 .questionCounter {
     position: absolute;
@@ -185,7 +228,7 @@ canvas {
     left: 10px;
 }
 
-.qBody{
+.qBody {
     padding: 15px 16px;
     min-width: 55vw;
     background-color: #ccc;
@@ -194,7 +237,7 @@ canvas {
     font-weight: bold;
 }
 
-.options{
+.options {
     position: absolute;
     top: 35%;
     left: 10%
@@ -206,44 +249,44 @@ canvas {
     right: 10px;
 }
 
-.correctAns{
+.correctAns {
     color: #92D400;
 }
 
-.wrongAns{
+.wrongAns {
     color: red;
 }
 
-.options span{
+.options span {
     white-space: nowrap;
 }
 
-.card{
+.card {
     background-color: #2a2a2a;
 }
 
-form{
+form {
     width: 50%;
     margin: 0 auto;
 }
 
-.okBtn{
+.okBtn {
     width: 50%;
     height: 40px;
     position: absolute;
     bottom: 0;
 }
 
-.form-group label{
+.form-group label {
     color: white;
     margin-bottom: 0 !important;
 }
 
-.landing .row{
+.landing .row {
     height: 100%;
 }
 
-.finalScore{
+.finalScore {
     color: red;
     font-size: 30px;
     position: absolute;
@@ -251,36 +294,32 @@ form{
     left: 60%;
 }
 
-.form-error{
+.form-error {
     color: red;
 }
 
-.landing{
+.landing {
     width: 50vw !important;
     height: 70vh !important;
 }
 
-.hint{
+.hint {
     width: 500px;
     position: absolute;
     bottom: 0;
     left: 15%;
 }
 
-@media 
-(-webkit-min-device-pixel-ratio: 1.25), 
-(min-resolution: 120dpi){ 
-    .instructions,.landing,.game-over{
+@media (-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+    .instructions,
+    .landing,
+    .game-over {
         width: 53vw;
         height: 50vh;
     }
 }
 
-@media screen and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) {
-  .leader-pic{
-      top: -16.5vw;
-  }  
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    
 }

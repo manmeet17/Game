@@ -259,6 +259,7 @@ $(document).on("initialize-socket", function () {
 
     socket.on("mismatch", function()  {
         window.alert("There was a discrepancy");
+        location.href="/";
     });
 
     socket.on('answer', function(data)  {
@@ -290,16 +291,17 @@ $(document).on("initialize-socket", function () {
 
 $(document).on('fire-game',function(e){
         createjs.Ticker.addEventListener("tick", tick);
+        gamePaused=true;
         loadSound();
-        hitter(level);
+        createjs.Sound.volume = 0;
+        $('.loader').css('visibility','visible');
+        setTimeout(function(){
+        $('.loader').css('visibility','hidden');
+        gamePaused=false;
+        createjs.Sound.volume = 1;
+    },2000);
 });
 
-function hitter(level) {
-    setTimeout(function () {
-        if (movingSpeed < 8) {
-            movingSpeed += 0.008;
-            level += 1;
-            hitter(level);
-        }
-    }, 1);
+if(movingSpeed<=1.5){
+    console.log("olllalalla");
 }

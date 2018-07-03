@@ -62,6 +62,9 @@ function tick(event) {
         }
 
         score += 1;
+        if(movingSpeed<=8){
+            movingSpeed+=0.0007;
+        }
         var finalScore = changeScore(score);
         text.text = finalScore;
         chair.scaleX = 0.5;

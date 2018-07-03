@@ -11,8 +11,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="../javascripts/merged.min.js"></script>
-    <script src="../javascripts/client.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascripts/client.js"></script> {{!--
+    <link rel="stylesheet" href="../css/style.css"> --}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
@@ -22,27 +22,30 @@
 <body>
     <img src="../images/assets/game_name.png" class="gameName">
     <div id="game">
+        <div class="loader">
+            <img src="../images/assets/loader.gif" alt="Loading ....">
+        </div>
         <h3 id="scoreP" class="hide">Game Over &nbsp;
             <span id="score"></span>
         </h3>
         <canvas id="game-holder" width="683" height="384" data-id="{{userId}}"></canvas>
     </div>
     <div class="instructions">
-    <img src="../images/assets/instructions.png">
-    <button class="playBtn">Play Game</button>
+        <img src="../images/assets/instructions.png">
+        <button class="playBtn">Play Game</button>
     </div>
     <div class="leader">
-        <img src="../images/assets/leader.png" class="leader-pic">
-        <ul class="leader-players list-group">
-            {{#each topScorrer}}
-            <li class="list-group-item"> {{this.name}}
-                <span class="float-right">
-                    <strong>{{this.personalBest}}</strong>
-                </span>
-            </li>
-            {{/each}}
-        </ul>
-    </div>
+    <h2 class="text-center">Leaderboard</h2>
+    <ul class="leader-players list-group">
+        {{#each topScorrer}}
+        <li class="list-group-item"> {{this.name}}
+            <span class="float-right">
+                <strong>{{this.personalBest}}</strong>
+            </span>
+        </li>
+        {{/each}}
+    </ul>
+</div>
     <div class="questions">
         <div class="entity">
             <div class="qBody">
