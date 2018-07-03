@@ -173,7 +173,7 @@ canvas {
 }
 
 .playBtn {
-    margin: -5% 0 0 0;
+    margin: -5% 1% 0 0;
     position: relative;
     z-index: 9999;
 }
@@ -310,6 +310,13 @@ form {
     left: 15%;
 }
 
+.game-over button {
+    position: absolute;
+    right: 1%;
+    bottom: 4%;
+    width: 200px
+}
+
 @media (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 120dpi) {
     .instructions,
@@ -321,7 +328,22 @@ form {
 }
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    .leader-head{
+    .leader-head {
         outline: none !important;
+    }
+
+    .game-over button {
+        position: absolute;
+        right: 1%;
+        bottom: 10%;
+        width: 200px
+    }
+
+    .finalScore {
+        color: red;
+        font-size: 30px;
+        position: absolute;
+        top: 56%;
+        left: 57%;
     }
 }
