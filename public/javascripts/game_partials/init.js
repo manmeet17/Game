@@ -293,6 +293,9 @@ $(document).on('fire-game',function(e){
         createjs.Ticker.addEventListener("tick", tick);
         gamePaused=true;
         loadSound();
+        if($(window).width()>=1280){
+            movingSpeed=5;   
+        }
         createjs.Sound.volume = 0;
         $('.loader').css('visibility','visible');
         setTimeout(function(){

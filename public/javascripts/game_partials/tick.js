@@ -62,13 +62,13 @@ function tick(event) {
         }
 
         score += 1;
-        if($(window).height()<=1200){
+        if($(window).width()<=1280){
             if(movingSpeed<=8){
                 movingSpeed+=0.0007;
             }
         }else{
-            if(movingSpeed<=11){
-                movingSpeed+=0.007;
+            if(movingSpeed<=12){
+                movingSpeed+=0.3;
             }
         }
         var finalScore = changeScore(score);
