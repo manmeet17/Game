@@ -299,5 +299,5 @@ $(document).on('fire-game',function(e){
         $('.loader').css('visibility','hidden');
         gamePaused=false;
         createjs.Sound.volume = 1;
-    },2000);
+    },3500);
 });
