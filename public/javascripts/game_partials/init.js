@@ -301,7 +301,3 @@ $(document).on('fire-game',function(e){
         createjs.Sound.volume = 1;
     },2000);
 });
-
-if(movingSpeed<=1.5){
-    console.log("olllalalla");
-}
