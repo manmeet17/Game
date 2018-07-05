@@ -1,6 +1,6 @@
 var tick = function(event) {
     // initTweens();
-    if (!gamePaused) {
+    if (!gamePaused && potHole) {
         var pt = potHole.localToLocal(0, 0, chair);
         //console.log(chair.y);
         if (chair.hitTest(pt.x, pt.y)) {
