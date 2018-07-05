@@ -2,7 +2,7 @@ var speed = 100;
 var speedFactor = 0.005;
 var currentHealth = 100;
 var score = 00000001;
-var movingSpeed=1.5;
+var movingSpeed=2.5;
 var level=0;
 var questions;
 var i = 0;
