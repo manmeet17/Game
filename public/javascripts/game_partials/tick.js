@@ -62,13 +62,13 @@ function tick(event) {
         }
 
         score += 1;
-        if($(window).width()<=1280){
+        if($(window).width()<=1280 || navigator.platform=="Win32"){
             if(movingSpeed<=8){
-                movingSpeed+=0.0007;
+                movingSpeed+=0.001;
             }
         }else{
             if(movingSpeed<=12){
-                movingSpeed+=0.3;
+                movingSpeed+=0.05;
             }
         }
         var finalScore = changeScore(score);
@@ -110,9 +110,8 @@ function tick(event) {
     }
 
     function randomCall(displayObj) {
-        //        console.log("called");
         var min = 1;
-        var max = 3;
+        var max = 2;
         var rand = Math.floor(Math.random() * (max - min + 1) + min);
         var channelRandom = Math.floor(Math.random() * (3));
         setTimeout(function () {

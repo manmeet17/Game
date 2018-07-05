@@ -36,7 +36,6 @@ function changeHealth() {
     healthBarSprite.gotoAndStop(healthTo);
     if (currentHealth === 0) {
         setTimeout(function () {
-            console.log("Crashed: "+score);
             gamePaused=true;
             // createjs.Sound.stop();
             scoreParent.classList.remove('hide');

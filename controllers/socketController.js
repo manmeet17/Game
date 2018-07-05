@@ -16,7 +16,6 @@ module.exports = (io) => {
                 if (err) return console.log("Error getting questions" + err);
                 console.log("Questions length: " + questions.length);
                 questions = utils.shuffleArray(questions);
-                questions = utils.limitTo(10, questions);
                 console.log("Questions length: " + questions.length);
                 socket.emit('fetchedQuestions', questions, score);
             });
@@ -51,7 +50,7 @@ module.exports = (io) => {
                 id: playerId,
                 score: Math.floor(playerScore+(playerScore*(correct)/10))
             }
-            console.log("Score Before: "+data.score);
+            console.log("Score After: "+data.score);
             socket.emit('restart', correct,data.score);
             socket.correct = 0;
             socket.attempted = 0;

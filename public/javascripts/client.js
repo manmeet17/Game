@@ -6,7 +6,6 @@ $(document).ready(function(){
     });
 
     var route=location.pathname;
-    console.log(route.search("rules"));
     if(route=="/"){
         $(document).trigger("initialize-entry");
     } else if (route.search('rules') !== -1) {

@@ -1,1316 +1,650 @@
 [
  {
-   "questionBody": "What type of drugs are produces by living cells as opposed to chemical components?",
+   "questionBody": "Who is responsible for monitoring and documenting a patient's involvement in an engagement program offered by your pharmaceutical company?",
    "hint": "",
-   "option_a": "Biologics",
-   "option_b": "Synthetic drugs",
-   "option_c": "Pharmaceuticals",
-   "option_d": "Small molecules",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Which is the new technology that are being currently used in health care delivery?",
-   "hint": "New technologies have emerged and matured which have promise to improve the supply chain and distribution processes that support surgical kits",
-   "option_a": "RFID",
-   "option_b": "3-D Printing",
-   "option_c": "Mobile Application",
-   "option_d": "All of the above",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "What are the implications of medical robotics in R&D to Life Science and MedTech companies?",
-   "hint": "",
-   "option_a": "Faster clinical trials ultimately decreasing drug and medical device time to market",
-   "option_b": "Increased accuracy in regulatory compliance",
-   "option_c": "New partnerships with primarily robotics-focused companies across industries",
-   "option_d": "All of the above",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Who is the Primary Customer of pharmaceutical companies?",
-   "hint": "",
-   "option_a": "Health Insurance companies",
-   "option_b": "Health care providers",
-   "option_c": "Patients",
-   "option_d": "Government agencies",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "What type of drugs can be sold without patent protection",
-   "hint": "",
-   "option_a": "Generics",
-   "option_b": "Blockbusters",
-   "option_c": "Over-the-counter drugs",
-   "option_d": "Off-patent drugs",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Which type of drugs are manufactured from chemical components?",
-   "hint": "",
-   "option_a": "Large molecule drugs",
-   "option_b": "Vaccines",
-   "option_c": "Biologics",
-   "option_d": "Synthetic drugs",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "The Indian biotech industry holds about how much per cent share of the global biotech industry",
-   "hint": "",
-   "option_a": "2",
-   "option_b": "5",
-   "option_c": "7",
-   "option_d": "9",
-   "correctAnswer": "A"
- },
- {
-   "questionBody": "Which of these is a key driver for CAR-T Supply Chain?",
-   "hint": "LS Companies have made major investments in Supply Chain to complement with their CAR-T process effectively",
-   "option_a": "Strict and Transparent Chain of Custody",
-   "option_b": "Time Sensitive Process",
-   "option_c": "Zero Tolerance to Temperature Variances",
-   "option_d": "All of the above",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which of the following is a type of necessary innovation for Life Sciences companies?",
-   "hint": "",
-   "option_a": "Broader set of quality measures",
-   "option_b": "Improved data availability, transparency, and integration",
-   "option_c": "Risk-sharing",
-   "option_d": "All of the above",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "\"Brown fat\" is a?",
-   "hint": "",
-   "option_a": "Thermogenic tissue",
-   "option_b": "Epithelial tissue",
-   "option_c": "Lymphoid tissue",
-   "option_d": "Haemopoetic tissue",
-   "correctAnswer": ""
- },
- {
-   "questionBody": "Which type of life sciences company uses biotechnology to develop and manufacture products?",
-   "hint": "",
-   "option_a": "Bioscience companies",
-   "option_b": "Biotech firms",
-   "option_c": "Lifesciences services companies",
-   "option_d": "Pharmaceutical Companies",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "Which business group within pharmaceutical company typically represents largest expense for organization?",
-   "hint": "",
-   "option_a": "R & D",
-   "option_b": "Manufacturing and QA",
-   "option_c": "Sales and Marketing",
-   "option_d": "Planning",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Which of the following is a reason Life Sciences companies face challenges in understanding available data sets ?",
-   "hint": "Life Sciences companies face challenges in understanding ways to generate insight",
-   "option_a": "Use of cloud-based platforms",
-   "option_b": "Lack of data",
-   "option_c": "need for a scalable and agile infrastructure",
-   "option_d": "Ability to mine various datasets via cognitive computing",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "What does \"CRISPR\" stand for?",
-   "hint": "",
-   "option_a": "Clustered Regularly Interdependent Short Palindromic Repeats",
-   "option_b": "Clustered Regularly Interference Short Palindromic Repeats",
-   "option_c": "Clustered Regularly Interspaced Short Palindromic Repeats",
-   "option_d": "Clustered Regularly Interference Short Polymer Repeats",
+   "option_a": "Nurse Educator",
+   "option_b": "Reimbursement Specialist",
+   "option_c": "Patient Connect Support Coordinator",
+   "option_d": "Caregiver",
    "correctAnswer": "c"
  },
  {
-   "questionBody": "How will RFID technology provide a positive impact to patients?",
+   "questionBody": "The activities a Patient Connect Support Coordinator performs for a patient are organized within a Patient Connect concept called a  ________",
    "hint": "",
-   "option_a": "Faster and more precise means for the development of surgical procedure kit components to best meet the needs of the patient",
-   "option_b": "Easy access to patient data (e.g., a patient?s allergies, blood type, susceptibility to conditions such as hypothermia, etc.) to inform OR resourcing (e.g., equipment needs)",
-   "option_c": "Increase in speed for instrument/tool design changes and new models on demand, versus 1?2 weeks",
-   "option_d": "Improved OR supply management through real-time inventory reports, automated replenishment orders and internet-based connectivity with supply distributors",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which term describes monitoring of approved and available drugs to identify safety not uncovered in clinical testing?",
-   "hint": "",
-   "option_a": "On- top testing",
-   "option_b": "Post marketing surveillance",
-   "option_c": "Off-label use",
-   "option_d": "Regulatory pathways",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "Who is responsible for evaluation and supervision of drugs used for human use in European Union?",
-   "hint": "",
-   "option_a": "European Practices Agency",
-   "option_b": "European Administration Agency",
-   "option_c": "European Health Agency",
-   "option_d": "European Medicines Agency",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which term describes the situation that patents are recently expired or are scheduled to expire within few years?",
-   "hint": "",
-   "option_a": "Patent roadblock",
-   "option_b": "Pipeline leak",
-   "option_c": "Patent cliff",
-   "option_d": "Pipeline drop",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Reference laboratory market will grow at an average annualization nominal rate of around -- % between 2009 and 2014",
-   "hint": "",
-   "option_a": "5",
-   "option_b": "6",
-   "option_c": "8",
-   "option_d": "10",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "No of Immunoglobulins present in the human",
-   "hint": "",
-   "option_a": "10",
-   "option_b": "6",
-   "option_c": "4",
-   "option_d": "0",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Which of the following drugs generate more than $1 billion in sales each year?",
-   "hint": "",
-   "option_a": "Blockbuster drugs",
-   "option_b": "Branded drugs",
-   "option_c": "Over-the-counter drugs",
-   "option_d": "Generic drugs",
+   "option_a": "Program Case",
+   "option_b": "Documents",
+   "option_c": "Account",
+   "option_d": "Patient Portal",
    "correctAnswer": "a"
  },
  {
-   "questionBody": "Which of the following is NOT a key driver of R&D robotics in the Life Sciences / MedTech industries?",
+   "questionBody": "Which of the following is NOT an activity of a Support Coordinator?",
    "hint": "",
-   "option_a": "Improved clinical outcomes",
-   "option_b": "Increased number of machine learning jobs",
-   "option_c": "Increased productivity and lower costs",
-   "option_d": "Increased accuracy and consistency",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "FDA has recently approved Kymriah, CAR-T therapy developed by ?",
-   "hint": "The product is tisagenlecleucel-T (Kymriah, Novartis), approved for use in pediatric and young adult patients (age 3 to 25 years) with relapsed or refractory acute lymphoblastic leukemia (ALL).",
-   "option_a": "Dana-Farber Cancer Institute",
-   "option_b": "American Society of Hematology",
-   "option_c": "Novartis",
-   "option_d": "Medscape",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Which is a role of academic medical centers in life sciences industry?",
-   "hint": "",
-   "option_a": "Develop pharmaceutical drugs",
-   "option_b": "Use biotechnology to create drugs",
-   "option_c": "Manage clinical trials required for drug approvals",
-   "option_d": "None of the above",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "In which stage does the chemical structure of lead components will be modified to enhance biological effects, purity?",
-   "hint": "",
-   "option_a": "Target validation",
-   "option_b": "Lead identification",
-   "option_c": "Target identification",
-   "option_d": "Lead optimization",
+   "option_a": "Enroll a patient in an engagement program",
+   "option_b": "Send patients reminders of upcoming appointments.",
+   "option_c": "Document adverse events and failures to adhere to the program regimen",
+   "option_d": "Advise Patient on drug dosage",
    "correctAnswer": "d"
  },
  {
-   "questionBody": "CAR-T is-",
-   "hint": "It stands for chimeric antigen receptor T-cell therapy, uses a patient?s immune T-cells and re-engineers them to better fight cancer",
-   "option_a": "cell therapy",
-   "option_b": "An enzyme",
-   "option_c": "Protein stands",
-   "option_d": "An antibody",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Which is an emerging approach for disease treatment and prevention that takes into account individual variability in genes, environment, and lifestyle for each person?",
-   "hint": "This approach allows doctors and researchers to predict more accurately which treatment and prevention strategies for a particular disease will work in which groups of people",
-   "option_a": "Precision Medicine",
-   "option_b": "one-size-fits-all\" approach",
-   "option_c": "Health information technology",
-   "option_d": "Companion Diagnostics",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Which of the following is a reason it is difficult to link data sets across health systems?",
-   "hint": "Without a common unique identifier it is difficult to accurately match patient health records that are stored in different systems",
-   "option_a": "Resistance from researchers",
-   "option_b": "Inconsistent use of metadata, data standards and terminology",
-   "option_c": "Use of cloud-based platforms",
-   "option_d": "Lack of data",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "CADD stands for?",
+   "questionBody": "Which of the following is defined as an undesirable side effect of a drug?",
    "hint": "",
-   "option_a": "Computer aided drug design",
-   "option_b": "Computer aided drug development",
-   "option_c": "Computer associated drug design",
-   "option_d": "Computer associated drug development",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "The term Antibiotic was coined by",
-   "hint": "the microbiologist who discovered streptomycin",
-   "option_a": "Alexander Flemming",
-   "option_b": "Selman Walksman",
-   "option_c": "Louis Pasteur",
-   "option_d": "Robert Koch",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "What term is used to describe the process of developing biologics by creating new DNA created from segments of another DNA?",
-   "hint": "",
-   "option_a": "Biosimilars",
-   "option_b": "Synthetics",
-   "option_c": "Recombinant DNA",
-   "option_d": "None of the above",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "USFDA stands for",
-   "hint": "",
-   "option_a": "US Food and Drug Administration",
-   "option_b": "US Food and Drug Association",
-   "option_c": "US Food and Detail Administration",
-   "option_d": "US Food and Drug Approval",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Which of the following is the Component of Health information technology?",
-   "hint": "Health information technology (HIT) is a broad concept that encompasses an array of technologies to store, share, and analyze health information.",
-   "option_a": "Electronic Health Records",
-   "option_b": "Personal Health Records",
-   "option_c": "E-Prescribing",
-   "option_d": "All of the above",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which is the traditional source of competitive differentiation for big pharma and biotech firms?",
-   "hint": "",
-   "option_a": "Product leadership",
-   "option_b": "Customer/market intimacy",
-   "option_c": "Low price provider",
-   "option_d": "None of the above",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "What was the name of the technology built by NSA after discovering the weakness in Microsoft?s SMB protocol which got leaked leading to Wannacry?",
-   "hint": "NSA discovers a weakness in Microsoft?s SMB protocol and builds weaponized software to exploit said weakness, which got leaked by a group called Shadow Brokers",
-   "option_a": "Built Safe",
-   "option_b": "Secure Plus",
-   "option_c": "Eternal Blue",
-   "option_d": "Encrypted Tokens",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Which of the following is benefit of Precision Medicine?",
-   "hint": "Precision medicine presents Life Sciences companies with an opportunity to innovate and optimize commercialization efforts",
-   "option_a": "Data to Target Treatment",
-   "option_b": "commercial Barrier Breakdown",
-   "option_c": "R&D acceleration",
-   "option_d": "All of the Above",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "What is not a component of the value proposition for an Adaptable Business Model?",
-   "hint": "",
-   "option_a": "Ability to read and act on signals",
-   "option_b": "Ability to manage complex multi-company systems",
-   "option_c": "Ability to source R&D internally",
-   "option_d": "Ability to mobilize",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Fructose sugar is also know as",
-   "hint": "is a simple ketonic mono-saccharide found in many plants",
-   "option_a": "Grape sugar",
-   "option_b": "Fruit sugar",
-   "option_c": "Cane sugar",
-   "option_d": "Beet sugar",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "Which company is considered a member of ?Big Pharma??",
-   "hint": "",
-   "option_a": "Novartis",
-   "option_b": "ThermoFisher",
-   "option_c": "Amgen",
-   "option_d": "Teva",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Which of the following labs contribute major part in U.S reference laboratory market share",
-   "hint": "",
-   "option_a": "Hospital based labs",
-   "option_b": "Independent labs",
-   "option_c": "Outsourcing labs",
-   "option_d": "Others",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Which of the following is a business challenge in Precision Medicine?",
-   "hint": "business challenges need to be navigated in order to successfully commercialize new innovative therapies",
-   "option_a": "Developing Innovative Value Propositions",
-   "option_b": "Managing External Partnerships",
-   "option_c": "Securing Market Access",
-   "option_d": "All of the above",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which of the following is a part of the Infrastructural Challenge of Precision Medicine?",
-   "hint": "Inefficient storage technologies could leads to performance issues and unwanted downtime; hence these drives the need for a scalable and agile infrastructure",
-   "option_a": "volume",
-   "option_b": "Veracity",
-   "option_c": "Variety of Data",
-   "option_d": "All of the above",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which of the following is not an area of stagnation for medical device cyber security?",
-   "hint": "As the connected medical device security/IoT space matures, there are areas of stagnation, which also provide an opportunity for manufacturers to improve on for future development.",
-   "option_a": "Identifying and treating the risks of fielded and legacy devices",
-   "option_b": "Conducting technical security testing and security risk assessment on devices while in development",
-   "option_c": "Proactively monitoring and responding to security events",
-   "option_d": "Providing appropriate security training to product engineers and architects",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "Which of the following is a key benefit of using robotics in pre-clinical research and development?",
-   "hint": "",
-   "option_a": "Robots are inexpensive",
-   "option_b": "Robots provide input on experimental design",
-   "option_c": "Operational efficiencies speed up lead identification and allow scientists to focus on breakthrough technologies instead of manual procedures",
-   "option_d": "Systems from different vendors are guaranteed to easily integrate in a lab setting",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Power house of cell is considered as",
-   "hint": "",
-   "option_a": "EPR",
-   "option_b": "Ribosomes",
-   "option_c": "Mesomers",
-   "option_d": "Mitochondria",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which expense plays a large role in the revenue cycle of the reference lab sub sector",
-   "hint": "",
-   "option_a": "Depreciation",
-   "option_b": "Maintenance",
-   "option_c": "Bad Debt",
-   "option_d": "Rent",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Increased consumer transparency is which kind of challenge that Biotech companies are facing?",
-   "hint": "Because of these challenges, biotech organizations should adopt flexible business strategies to adapt to change to remain relevant in the marketplace",
-   "option_a": "Uncertain Business Environment",
-   "option_b": "Market Demands",
-   "option_c": "Emerging technologies and commercialization",
+   "option_a": "Product Complaint",
+   "option_b": "Adverse Event",
+   "option_c": "Both a & b",
    "option_d": "None of the above",
    "correctAnswer": "b"
  },
  {
-   "questionBody": "Which business group within pharmaceutical company is responsible for testing drug therapies?",
-   "hint": "",
-   "option_a": "Quality Assurances",
-   "option_b": "Research & development",
-   "option_c": "Manufacturing",
-   "option_d": "Sales",
+   "questionBody": "Which of the following examples can be considered as an Adverse Event?",
+   "hint": "Adverse Event is defined as an undesirable side effect of a drug",
+   "option_a": "After the medication administration, the patient experienced an injection site irritation",
+   "option_b": "The needle used for injecting drug failed to fully eject from the device ",
+   "option_c": "Both a & b",
+   "option_d": "None of the above",
    "correctAnswer": "a"
  },
  {
-   "questionBody": "What cell types can lentiviral vectors infect?",
+   "questionBody": "A drug manufacturer's programs into which patients are enrolled into, is called as ________",
    "hint": "",
-   "option_a": "Non-dividing cells only",
-   "option_b": "Actively dividing cells",
-   "option_c": "Quiescent Cells",
-   "option_d": "Both A and B",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Biopharma is the largest sector contributing about __ per cent of the total revenue",
-   "hint": "",
-   "option_a": "55",
-   "option_b": "57",
-   "option_c": "62",
-   "option_d": "64",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "What is one of the major reasons driving biotech M&A in recent years?",
-   "hint": "",
-   "option_a": "Because target valuations have recently declined, offering attractive revenue multiples to acquirers",
-   "option_b": "Because CEO?s are trying to justify their high pay packages",
-   "option_c": "Because new technologies are allowing research to occur at lower costs, fueling the success of biotech startups which then become attractive targets",
-   "option_d": "Because regulatory changes have eased restrictions on M&A activity",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Which of the following is a driver for the evolution of the HIT ecosystem?",
-   "hint": "Collection of patient longitudinal data enables the assessment of outcomes and identification of variables driving outcomes",
-   "option_a": "Decreasing access to therapy",
-   "option_b": "Spread of ineffective treatments",
-   "option_c": "Continued health system vertical and horizontal integration",
-   "option_d": "Shift away from outcomes orientation",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "What is the first step in core laboratory operations in which specimens are accepted in laboratory from various sites for testing?",
-   "hint": "",
-   "option_a": "Reporting",
-   "option_b": "Logging and notification",
-   "option_c": "Accessioning",
-   "option_d": "Cross Referencing",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Which of the following is/are true regarding Open Innovation",
-   "hint": "",
-   "option_a": "Companies share ideas with other organizations, including competitors",
-   "option_b": "It's adopted more by other industries like IT and C&IP, but not much by biopharma",
-   "option_c": "There is a three-fold probability of success when drugs are sourced via OI",
-   "option_d": "All of the Above",
+   "option_a": "Adverse Event",
+   "option_b": "Documents",
+   "option_c": "Account",
+   "option_d": "Engagement Program",
    "correctAnswer": "d"
  },
  {
-   "questionBody": "Which of the following is the universal recipient blood group?",
-   "hint": "they can receive a blood transfusion from a person with any blood type, not just their own blood type.",
-   "option_a": "A",
-   "option_b": "B",
-   "option_c": "AB",
-   "option_d": "O",
-   "correctAnswer": "c"
+   "questionBody": "Which of the following is not a Health Care Professional?",
+   "hint": "",
+   "option_a": "Physician",
+   "option_b": "Nurse",
+   "option_c": "Physician Assistant ",
+   "option_d": "Support Coordinator",
+   "correctAnswer": "d"
  },
  {
-   "questionBody": "Study of Tissues",
-   "hint": "",
-   "option_a": "Geriatrics",
-   "option_b": "Hematology",
-   "option_c": "Histology",
-   "option_d": "Psychiatry",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Which of the three approaches to using adaptable business models would be best for a life science?s company trying to understand more about how patients are affected by their products?",
-   "hint": "",
-   "option_a": "Approach 1: Using Adaptable Business Models to increase the reaction time to           market conditions and the likelihood of a successful innovation",
-   "option_b": "Approach 2: Using Adaptable Business Models to increase an organization?s speed to market",
-   "option_c": "Approach 3: Using Adaptable Business Models to leverage new technology",
+   "questionBody": "Which of the following is a valid Account type in Patient Connect?",
+   "hint": "A Participant revolving around Patient's journey of care(including the Patient itself) can be created as an Account Type",
+   "option_a": "Patient",
+   "option_b": "Physician",
+   "option_c": "Payer",
    "option_d": "All of the above",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "What type of payments do drug manufacturer makes to a life sciences company for right to use one of its patents?",
-   "hint": "",
-   "option_a": "License fees",
-   "option_b": "R&D payments",
-   "option_c": "Subscription rights",
-   "option_d": "Royalties",
    "correctAnswer": "d"
  },
  {
-   "questionBody": "In which clinical phase of testing is drug tested with focus on safety?",
+   "questionBody": "Both patient or the patient's HCP may fax an enrollment form or submit an online enrollment form to initiate the patient's enrollment?",
    "hint": "",
-   "option_a": "Phase II",
-   "option_b": "Phase III",
-   "option_c": "Phase I",
-   "option_d": "Phase IV",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Which is the primary source of revenue for large pharmaceutical companies?",
-   "hint": "",
-   "option_a": "R & D",
-   "option_b": "Financial income",
-   "option_c": "Net sales",
-   "option_d": "Royalties",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Name of the emerging field of correcting and replacing defective genes?",
-   "hint": "",
-   "option_a": "Gene Therapy",
-   "option_b": "Genomics",
-   "option_c": "Biocenology",
-   "option_d": "Nanotechnology",
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
    "correctAnswer": "a"
  },
  {
-   "questionBody": "Other name of Glycolysis",
+   "questionBody": "Typically, a new patient's involvement in a program begins with a submitted enrollment form",
    "hint": "",
-   "option_a": "Hexoses diphosphate pathway",
-   "option_b": "TCA",
-   "option_c": "HMP shunt",
-   "option_d": "Gluconeogenesis",
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
    "correctAnswer": "a"
  },
  {
-   "questionBody": "Branch of medicine dealing with the muscular and skeletal systems",
-   "hint": "",
-   "option_a": "Oncology",
-   "option_b": "Podiatry",
-   "option_c": "Toxicology",
-   "option_d": "Orthopedics",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which of the following is the initial phase in drug discovery process",
-   "hint": "",
-   "option_a": "Target validation",
-   "option_b": "Lead identification",
-   "option_c": "Target identification",
-   "option_d": "Lead optimization",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Who is the Primary Customer of pharmaceutical companies?",
-   "hint": "",
-   "option_a": "Health Insurance companies",
-   "option_b": "Health care providers",
-   "option_c": "Patients",
-   "option_d": "Government agencies",
+   "questionBody": "As a Support Coordinator I would create a case of Type BI/BV for the patient if I want to _______",
+   "hint": "BI/ BV = Benefits Investigation/ Benefits Verification",
+   "option_a": "Review Patient Information",
+   "option_b": "Initiate Insurance Verification",
+   "option_c": "Send a Welcome notification",
+   "option_d": "None of the above",
    "correctAnswer": "b"
  },
  {
-   "questionBody": "Power house of cell is considered as",
-   "hint": "These are cells that are involved in releasing energy from food.",
-   "option_a": "Mitochondria",
-   "option_b": "EPR",
-   "option_c": "Golgi complex",
-   "option_d": "Ribosomes",
+   "questionBody": "The Patient�s consent to participate in the medication program should be received during enrollment and kept up-to-date.",
+   "hint": "",
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
    "correctAnswer": "a"
  },
  {
-   "questionBody": "Which of the following is not a potential reason or driving factor for a pharma company to implement a DTP distribution model?",
+   "questionBody": "Use when compassionate funding has been authorized to pay for the patient's participation in the engagement program.",
    "hint": "",
-   "option_a": "The company?s branded drug is facing loss of exclusivity due to patent expiration",
-   "option_b": "The company is experiencing issues related to the sale of counterfeit products from illegitimate pharmacies",
-   "option_c": "The company wishes to strengthen its relationships with its wholesalers and pharmacies",
-   "option_d": "The company wishes to enhance patient adherence to its drug by ensuring continuity of the its drug?s color and appearance",
-   "correctAnswer": "c"
+   "option_a": "Alternate Funding",
+   "option_b": "Appeal",
+   "option_c": "Copay",
+   "option_d": "Prior Authorization ",
+   "correctAnswer": "a"
  },
  {
-   "questionBody": "Which of the following is not a reason for resistance to innovative surgical procedure kit technology?",
+   "questionBody": "Manage an _____________ to the patient's insurance company after it has denied coverage for the patient's participation in the engagement program.",
    "hint": "",
-   "option_a": "Recognition of necessary training and behavior change among medical practitioners to learn and adopt new technologies",
-   "option_b": "Significant financial costs associated with adoption of technology",
-   "option_c": "Belief that kits cannot offer the necessary optionality of medical treatment",
-   "option_d": "Reduced emphasis on supply chain management among medical practitioners; focus on delivery of treatment regardless of potential for waste",
+   "option_a": "Alternate Funding",
+   "option_b": "Appeal",
+   "option_c": "Copay",
+   "option_d": "Prior Authorization ",
    "correctAnswer": "b"
  },
  {
-   "questionBody": "Which agency directs and coordinates international health activities and defines international standards for health care?",
+   "questionBody": "This type of coverage is used to Manage the patient's copay obligations. ",
    "hint": "",
-   "option_a": "World health Organization",
-   "option_b": "United Medicines agency",
-   "option_c": "Food and Drug Administration",
-   "option_d": "International Institute of health",
+   "option_a": "Alternate Funding",
+   "option_b": "Appeal",
+   "option_c": "Copay",
+   "option_d": "Prior Authorization ",
+   "correctAnswer": "c"
+ },
+ {
+   "questionBody": "A _____________ is required for the patient's insurer to cover the cost of the engagement program.",
+   "hint": "",
+   "option_a": "Alternate Funding",
+   "option_b": "Appeal",
+   "option_c": "Copay",
+   "option_d": "Prior Authorization ",
    "correctAnswer": "d"
  },
  {
-   "questionBody": "Which term describes that drug is under development or in testing?",
+   "questionBody": "A medical facility such as a hospital, clinic, or long-term care facility is called as _____________",
    "hint": "",
-   "option_a": "Formulary order",
-   "option_b": "Phase I testing",
-   "option_c": "Drug pipeline",
+   "option_a": "HCO",
+   "option_b": "Franchise",
+   "option_c": "Payer",
+   "option_d": "Manufacturer",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "The patient's insurer is also known as __________",
+   "hint": "",
+   "option_a": "Field Training Nurse ",
+   "option_b": "HCO",
+   "option_c": "Payer",
    "option_d": "None of the above",
    "correctAnswer": "c"
  },
  {
-   "questionBody": "Which of the following provides specialized scientific equipment for Research and testing?",
+   "questionBody": "A visiting nurse who educates the patient about the therapy is called as Field Training Nurse.",
    "hint": "",
-   "option_a": "Biotech firms",
-   "option_b": "Distributers",
-   "option_c": "Pharmaceutical companies",
-   "option_d": "Life sciences services companies",
-   "correctAnswer": "d"
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
+   "correctAnswer": "a"
  },
  {
-   "questionBody": "Which of the following is a key value driver for incorporating Direct to Patient models in the supply chain?",
+   "questionBody": "Which of the following is/ are channels for Patient Enrollment?",
    "hint": "",
-   "option_a": "Patient Satisfaction",
-   "option_b": "Brand Protection",
-   "option_c": "Improved Visibility",
-   "option_d": "All of the Above",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "What is not one of the key drivers of value based care?",
-   "hint": "",
-   "option_a": "Focus on Quality and Outcomes",
-   "option_b": "Shifting Risk",
-   "option_c": "Increased Awareness of Cost",
-   "option_d": "Physician Advocacy",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Study of cancers",
-   "hint": "",
-   "option_a": "Pathology",
-   "option_b": "Geriatrics",
-   "option_c": "Immunology",
-   "option_d": "Oncology",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which of the following extend federal oversight to all reference laboratories in US?",
-   "hint": "",
-   "option_a": "U.S food and Drug Administration",
-   "option_b": "Department of health and services",
-   "option_c": "U.S occupational safety administration",
-   "option_d": "Clinical laboratory improvements amendments",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which of the following can be achieved by simplifying distribution network such as Direct to Patient distribution model?",
-   "hint": "",
-   "option_a": "End-to-end visibility",
-   "option_b": "Cost reduction",
-   "option_c": "Better demand visibility",
+   "option_a": "Fax",
+   "option_b": "Email",
+   "option_c": "Online Form",
    "option_d": "All of the above",
    "correctAnswer": "d"
  },
  {
-   "questionBody": "Increase in speed for instrument/tool design changes and new models on demand, versus weeks or months is an impact of which new Technology?",
-   "hint": "Lower cost production in comparison to selective laser sintering (SLS)",
-   "option_a": "RFID",
-   "option_b": "3-D Printing",
-   "option_c": "Mobile Applications",
-   "option_d": "Smart Cabinets",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "How much is the size of electronic Id that RFID surgical tag gives?",
-   "hint": "Along with the ID is a picture of the kit content, the manufacturer number, date of service, and maintenance records.",
-   "option_a": "8-bit",
-   "option_b": "16- bit",
-   "option_c": "32- bit",
-   "option_d": "64- bit",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "What is the largest source of expense for most pharmaceutical companies?",
+   "questionBody": "A health plan is a set of coverages provided by an insurer (payer)",
    "hint": "",
-   "option_a": "Marketing and sales",
-   "option_b": "Research & development",
-   "option_c": "Interest expense",
-   "option_d": "General administration",
-   "correctAnswer": "d"
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
+   "correctAnswer": "a"
  },
  {
-   "questionBody": "Study of blood and blood diseases",
+   "questionBody": "Branch of medicine that deals with the prevention, diagnosis, and treatment of cancer is _______",
    "hint": "",
-   "option_a": "Hematology",
-   "option_b": "Neonatology",
-   "option_c": "Pediatrics",
-   "option_d": "Urology",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "A manufacturer would like to design a value-based contract that reimburses payers for the full price of the drug and any subsequent hospitalization costs related to the disease that are incurred by compliant patients. Which Regulatory hurdle needs to be considered when designing the contract?",
-   "hint": "",
-   "option_a": "Anti-Kickback Statutes",
-   "option_b": "Promotion Material Regulations",
-   "option_c": "Government Pricing Impacts",
-   "option_d": "All of the Above",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which drug became becomes one of the fastest selling drugs of all time after getting approved ?",
-   "hint": "The new drug got approval as a hepatitis C drug in December 2013",
-   "option_a": "Harvoni",
-   "option_b": "CAR-T",
-   "option_c": "Sovaldi",
-   "option_d": "None of the Above",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Which of the following is the largest funder of medical research in the world?",
-   "hint": "",
-   "option_a": "WHO",
-   "option_b": "Bill & Melinda Gates Foundation",
-   "option_c": "National Institute of health",
-   "option_d": "National Institute of Medical research",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Which is the largest segments of the medical device market?",
-   "hint": "The market was valued at $9,115 million in 2016, and is expected to reach $14,728 million by 2022 supported by a CAGR of 7.1% during the period 2016 to 2022",
-   "option_a": "Surgical instruments",
-   "option_b": "Surgical appliances",
-   "option_c": "Blood Transfusion and IV equipment",
-   "option_d": "Both A and B",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Immunoglobulins(antibodies) are made up of?",
-   "hint": "Also Known as White blood Cells",
-   "option_a": "Red Blood cells",
-   "option_b": "Plasma Cells",
-   "option_c": "Platelets",
-   "option_d": "polypeptide chains",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "India is ranked in which place in the world in biotech industry",
-   "hint": "",
-   "option_a": "9",
-   "option_b": "12",
-   "option_c": "14",
-   "option_d": "15",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "What is the name of business model that can be altered easily and effectively to respond to changes across internal and external environments, while fostering growth and enabling the business to stay competitive?",
-   "hint": "Rising uncertainty and volatility within the biotechnology sector are driving companies to innovate and restructure; therefore, adding agility and flexibility to their operating model is paramount to success",
-   "option_a": "Health Information Technology Model",
-   "option_b": "Precision Medicine Model",
-   "option_c": "Adaptable Business Model",
-   "option_d": "None of these",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Which of the below is a Biotech firm.",
-   "hint": "Biotech firms focus on biologics and in vitro diagnostics",
-   "option_a": "Novartis",
-   "option_b": "Pfizer",
-   "option_c": "Celgene",
-   "option_d": "Teva",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Which Act Simplified the generic drug Approval Process?",
-   "hint": "Is a 1984 United States federal law",
-   "option_a": "Hatch-Waxmen Act",
-   "option_b": "Medical Access and Care Reauthorization Act",
-   "option_c": "Better Care Reconciliation Act",
-   "option_d": "American Health Care Act",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "What is Fibrosis?",
-   "hint": "Excess fibrous connective tissue in an organ",
-   "option_a": "Disorder of respiratory system",
-   "option_b": "Eye infection",
-   "option_c": "Disorder in kidney",
-   "option_d": "Lung infection",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Treatment with anticancer drug is called?",
-   "hint": "It can work throughout the whole body",
-   "option_a": "Chemotherapy",
-   "option_b": "Radiation Therapy",
-   "option_c": "Aquarium Therapy",
-   "option_d": "Aurotherapy",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Invasion and reproduction of microorganisms in body is known as",
-   "hint": "I may result in tissue damage",
-   "option_a": "Iinfection",
-   "option_b": "Pathogens",
-   "option_c": "Fungi�",
-   "option_d": "Virus",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "What does IND Stand for in the Life sciences industry?",
-   "hint": "I am filing with regulators",
-   "option_a": "Investigational new Drug",
-   "option_b": "Indicative New Drug",
-   "option_c": "Industry New Development",
-   "option_d": "Improvised Nuclear drug",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "I am a large, complex molecule composed of amino acid.  What am I?",
-   "hint": "I am essential part of an organism and participate in virtually every process with cells",
-   "option_a": "Protein",
-   "option_b": "Bacteria",
-   "option_c": "Red blood cells",
-   "option_d": "DNA",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "A mock treatment is called?",
-   "hint": "Prescribed for the psychological benefit to the patient�",
-   "option_a": "Placebo",
-   "option_b": "Screening",
-   "option_c": "Randomization",
-   "option_d": "Aurotherapy",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "What the Study of malignant tumors including their physical,chemical and biologic properties is called?",
-   "hint": "I am the branch of medicine that deals with cancer.",
    "option_a": "Oncology",
    "option_b": "Immunology",
-   "option_c": "Informatics",
-   "option_d": "Screening",
+   "option_c": "Osteoporosis",
+   "option_d": "Rheumatology",
    "correctAnswer": "a"
  },
  {
-   "questionBody": "Which is the typical range of operating margins for pharmaceutical companies?",
-   "hint": "Most high margin in any manufacturing sector.",
-   "option_a": "75%-90%",
-   "option_b": "55%- 75%",
-   "option_c": "35%-55%",
-   "option_d": "15%-35%",
+   "questionBody": "The study of rheumatism, arthritis, and other disorders of the joints, muscles, and ligaments falls under ______",
+   "hint": "",
+   "option_a": "Oncology",
+   "option_b": "Immunology",
+   "option_c": "Osteoporosis",
+   "option_d": "Rheumatology",
+   "correctAnswer": "d"
+ },
+ {
+   "questionBody": "Injection Training is one of the services provided by Pharmaceutical which enables the participants/ patients to -",
+   "hint": "",
+   "option_a": "Understand the problem of unsafe injection practices and their proposed solutions. ",
+   "option_b": "Providing hands on experience to the participants/ patients",
+   "option_c": "Both a & b",
+   "option_d": "None of the above",
    "correctAnswer": "c"
  },
  {
-   "questionBody": "How many bones are there in the human wrist?",
-   "hint": "Carpal bones in the wrist that are firmly bound in�two�rows",
-   "option_a": "8",
-   "option_b": "7",
-   "option_c": "4",
-   "option_d": "9",
+   "questionBody": "If the mode of drug intake is Oral Tablet, then do you still need Injection Training as a service for that drug?",
+   "hint": "",
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
+   "correctAnswer": "b"
+ },
+ {
+   "questionBody": "Patient Consent is mandatory to record in order to enroll a Patient and/ or reach out to the Patient via a preferred channel?",
+   "hint": "",
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
    "correctAnswer": "a"
  },
  {
-   "questionBody": "What bacterium is named for German pediatrician Theodor Escherich?",
-   "hint": "The E is for Escherichia, after its discoverer, who first identified the bacteria in 1885 and called it Bacterium coli commune.",
-   "option_a": "E. coli",
-   "option_b": "E. cole",
-   "option_c": "H. coli",
-   "option_d": "H. cole",
+   "questionBody": "Which of the following is categorized as a Chronic Disease?",
+   "hint": "",
+   "option_a": "Cancer",
+   "option_b": "Diabetes",
+   "option_c": "Rheumatoid Arthritis",
+   "option_d": "All of the above",
+   "correctAnswer": "d"
+ },
+ {
+   "questionBody": "Can any Pharmacy be a Speciality Pharmacy?",
+   "hint": "",
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
+   "correctAnswer": "b"
+ },
+ {
+   "questionBody": "Specialty pharmacy services may include which of the following ?",
+   "hint": "",
+   "option_a": "Timely reimbursement support",
+   "option_b": "Patient Case Management",
+   "option_c": "Dispensing and Delivery of specialty medications",
+   "option_d": "All of the above",
+   "correctAnswer": "d"
+ },
+ {
+   "questionBody": "A co-pay is the fixed amount that insurance companies ask consumers to pay toward their medication or other health services.",
+   "hint": "",
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
    "correctAnswer": "a"
  },
  {
-   "questionBody": "What is the name of the protein--the most abundant in the human body--that holds our skin together?",
-   "hint": "The most abundant protein in our bodies, especially type 1",
-   "option_a": "Collagen",
-   "option_b": "Actin",
-   "option_c": "Coronin",
-   "option_d": "Elastin",
+   "questionBody": "Your expenses for medical care that aren't reimbursed by insurance is called as ",
+   "hint": "",
+   "option_a": "Alternate Funding",
+   "option_b": "Financial Assistance",
+   "option_c": "Out-of-Pocket Costs",
+   "option_d": "None of the above",
+   "correctAnswer": "c"
+ },
+ {
+   "questionBody": "Out-of-pocket costs include",
+   "hint": "",
+   "option_a": "Deductibles",
+   "option_b": "Coinsurance",
+   "option_c": "Co-Pay (copayments)",
+   "option_d": "All of the above",
+   "correctAnswer": "d"
+ },
+ {
+   "questionBody": "A medical reimbursement specialist's role includes - ",
+   "hint": "",
+   "option_a": "Working with insurance and billing companies to determine the method of payment for patients.",
+   "option_b": "Administrative duties, such as managing financial and medical records",
+   "option_c": "Greet new patients and schedule appointments",
+   "option_d": "All of the above",
+   "correctAnswer": "d"
+ },
+ {
+   "questionBody": "The National Health Service (NHS) in the UK is _________",
+   "hint": "",
+   "option_a": "Publicly funded national healthcare system",
+   "option_b": "Private healthcare system",
+   "option_c": "Can be categorized as either A or B",
+   "option_d": "None of the above",
    "correctAnswer": "a"
  },
  {
-   "questionBody": "What physical symptom is exhibited by those who suffer from blepharospasms?",
-   "hint": "It often refers to benign",
-   "option_a": "Uncontrollable winking.�",
-   "option_b": "Skin dryness",
-   "option_c": "Blindness",
-   "option_d": "None of these options",
+   "questionBody": "A _________ is the amount you pay for health care services before your health insurance begins to pay.",
+   "hint": "",
+   "option_a": "Deductibles",
+   "option_b": "Coinsurance",
+   "option_c": "Copay",
+   "option_d": "None of the above",
    "correctAnswer": "a"
  },
  {
-   "questionBody": "What is Deductible?",
-   "hint": "The amount you pay for covered health care",
+   "questionBody": "A ____________ is your share of the costs of a health care service. It's usually figured as a percentage of the amount we allow to be charged for services. ",
+   "hint": "",
+   "option_a": "Deductibles",
+   "option_b": "Coinsurance",
+   "option_c": "Copay",
+   "option_d": "None of the above",
+   "correctAnswer": "b"
+ },
+ {
+   "questionBody": "A _____________ is a fixed amount you pay for a health care service, usually when you receive the service. The amount can vary by the type of service.",
+   "hint": "",
+   "option_a": "Deductibles",
+   "option_b": "Coinsurance",
+   "option_c": "Copay",
+   "option_d": "None of the above",
+   "correctAnswer": "c"
+ },
+ {
+   "questionBody": "Before you can request an appeal, something must be denied, a service, payment or coverage.",
+   "hint": "",
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "In case of a Coverage denial, A letter of support from your __________  indicating the medical reasons that the requested service should be approved.",
+   "hint": "",
+   "option_a": "Health Care Provider",
+   "option_b": "Caregiver",
+   "option_c": "Support Coordinator",
+   "option_d": "Payer",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "It is possible to appeal for only a part of the coverage denial.",
+   "hint": "",
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "You can request an urgent or expedited coverage appeal if you:",
+   "hint": "",
+   "option_a": "Are currently receiving or you were prescribed to receive treatment",
+   "option_b": "Your medical provider believes a delay in treatment could seriously jeopardize your life or overall health",
+   "option_c": "Both a & b",
+   "option_d": "None of the above",
+   "correctAnswer": "c"
+ },
+ {
+   "questionBody": "Patient Connect feature enabling patient engagement through a _____________ where patients can input adherence information and receive appointment and medication reminders.",
+   "hint": "",
+   "option_a": "Patient mobile application",
+   "option_b": "HCP portal ",
+   "option_c": "Patient Portal ",
+   "option_d": "None of the above",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "Patient Connect feature where enabling HCP engaging through the _____________ where providers can view information on the status of their patients� coverage and adherence ",
+   "hint": "",
+   "option_a": "Patient mobile application",
+   "option_b": "HCP portal ",
+   "option_c": "Patient Portal ",
+   "option_d": "None of the above",
+   "correctAnswer": "b"
+ },
+ {
+   "questionBody": "Patient Connect feature enabling patient engagement through a ____________ where patients can view their treatment status, clinical information, appointments, and communicate with their provider or Support Coordincator",
+   "hint": "",
+   "option_a": "Patient mobile application",
+   "option_b": "HCP portal ",
+   "option_c": "Patient Portal ",
+   "option_d": "None of the above",
+   "correctAnswer": "c"
+ },
+ {
+   "questionBody": "__________ is an entity other than the patient that finances or reimburse the cost of health services.",
+   "hint": "",
+   "option_a": "Payer",
+   "option_b": "Physician",
+   "option_c": "Caregiver",
+   "option_d": "Reimbursement Specialist",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "Coverage can be of type:",
+   "hint": "",
+   "option_a": "Public",
+   "option_b": "Private",
+   "option_c": "Both a & b",
+   "option_d": "None of the above",
+   "correctAnswer": "c"
+ },
+ {
+   "questionBody": "The science and activities relating to the detection, assessment, understanding and prevention of adverse effects or any other drug-related problem is defined as _____",
+   "hint": "",
+   "option_a": "Pharmacovigilance (PV)",
+   "option_b": "Benefits Investigation",
+   "option_c": "Prior Authorization",
+   "option_d": "None of the above",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "GDPR regulation enforces which of the following rights to healthcare consumers?",
+   "hint": "",
+   "option_a": "Right for data subjects to obtain from the data controller confirmation as to whether or not personal data concerning them is being processed, where and for what purpose",
+   "option_b": "Right for data subjects to have the data controller erase his/her personal data, cease further dissemination of the data, and potentially have third parties halt processing of the data.",
+   "option_c": "Right for a data subject to receive the personal data concerning them, which they have previously provided in a 'commonly use and machine readable format' and have the right to transmit that data to another controller",
+   "option_d": "All of the above",
+   "correctAnswer": "d"
+ },
+ {
+   "questionBody": "The Health Insurance Portability and Accountability Act (HIPAA) sets the standard for sensitive patient data protection. ",
+   "hint": "",
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "HIPAA Compliance is not mandatory for companies that deal with protected health information (PHI).",
+   "hint": "",
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
+   "correctAnswer": "b"
+ },
+ {
+   "questionBody": "If the total cost of doctor's office visit was $104, and your medical plan includes $25 doctor copay visits, how much of the cost would be paid You; Insurance Company?",
+   "hint": "",
+   "option_a": "You=$25; Insurance Company = $79",
+   "option_b": "You=$79; Insurance Company = $25",
+   "option_c": "You=$0; Insurance Company = $104",
+   "option_d": "You=$104; Insurance Company = $0",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "If a patient enrollment form has missing patient consent/ signature, we can still begin treatment for them?",
+   "hint": "",
+   "option_a": "TRUE",
+   "option_b": "FALSE",
+   "option_c": "",
+   "option_d": "",
+   "correctAnswer": "b"
+ },
+ {
+   "questionBody": "A premium is :",
+   "hint": "",
+   "option_a": "A more expensive health plan",
+   "option_b": "An insurance payment",
+   "option_c": "A rebate check",
+   "option_d": "None of the above",
+   "correctAnswer": "b"
+ },
+ {
+   "questionBody": "A deductible is : ",
+   "hint": "",
    "option_a": "Part of Insurance costs",
    "option_b": "Charges from a hospital",
    "option_c": "What you pay your doctor",
-   "option_d": "None of these options",
+   "option_d": "None of the above",
    "correctAnswer": "a"
  },
  {
-   "questionBody": "Preventive care includes",
-   "hint": "Includes things such as regular check-ups",
-   "option_a": "Test like colonoscopies",
-   "option_b": "Breastfeeding Support",
-   "option_c": "Both",
-   "option_d": "None",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "What is Varicella?",
-   "hint": "Common childhood disease",
-   "option_a": "Chicken pox",
-   "option_b": "Vaccination",
-   "option_c": "Variety of diseases",
-   "option_d": "Small pox",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Antibiotics are not effective with diseases caused by",
-   "hint": "A small infectious agent",
-   "option_a": "Virus",
-   "option_b": "Bacteria",
-   "option_c": "Contagion",
-   "option_d": "Germs",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "What is Angina?",
-   "hint": "Discomfort caused when your heart muscle.",
-   "option_a": "Chest pain",
-   "option_b": "Irregular heart beat",
-   "option_c": "Heart attack",
-   "option_d": "Pain in left arm",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Gene mutation is",
-   "hint": "Permanent alteration in the DNA",
-   "option_a": "A tumor",
-   "option_b": "A change",
-   "option_c": "Restructuring",
-   "option_d": "A disease-producing gene",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "X-rays were discovered in what year?",
-   "hint": "Adjourns for day to mark death of Frederick Douglass",
-   "option_a": "1990",
-   "option_b": "1895",
-   "option_c": "1700",
-   "option_d": "1775",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "What was the first human organ to be successfully transplanted?",
-   "hint": "Dr. Richard H. Lawler performed in 1956 in Chicago.",
-   "option_a": "The Kidney.",
-   "option_b": "The Liver",
-   "option_c": "The eye",
-   "option_d": "The heart",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "What U.S. region did a 2010 Healthway study cite as having the most reported cases of depression?",
-   "hint": "A historic and bustling city of commerce and heavy industry",
-   "option_a": "Huntington, West Virginia",
-   "option_b": "Redding, California",
-   "option_c": "Dayton, Ohio",
-   "option_d": "Erie, Pennsylvania",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "What is the medical term for vomiting?",
-   "hint": "Originated from a greek word",
-   "option_a": "Emesis",
-   "option_b": "Fasitis",
-   "option_c": "Pineal",
-   "option_d": "Starch",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Life sciences and health care industry consumes of what percentage of US GDP?",
-   "hint": "Value as per 2016 report.",
-   "option_a": "0.20%",
-   "option_b": "15%",
-   "option_c": "13.10%",
-   "option_d": "12.90%",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Which is ranked top alongside other virtually pure-play pharmaceutical companies and is the largest drugmaker in the world by revenue",
-   "hint": "Bringing in $67.4 billion in revenue in 2011",
-   "option_a": "Pfizer",
-   "option_b": "Takeda",
-   "option_c": "Lilly",
-   "option_d": "Astra Zeneca",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "The FDA approved the world's first genetically engineered drug, human insulin (Humulin), in 1982 was developed by",
-   "hint": "Drug name is human insulin (Humulin)",
-   "option_a": "Eli Lilly�and Genentech",
-   "option_b": "Pfizer",
-   "option_c": "Takeda",
-   "option_d": "Astra Zeneca",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Whats the Full form of HMO?",
-   "hint": "One of the organizations",
-   "option_a": "Health Maintenance Organization",
-   "option_b": "Health Management Office",
-   "option_c": "Health Medicine Office",
-   "option_d": "Health Medicaid Organization",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Which is the primary source of funding for Non-Profit private health care payers?",
-   "hint": "Generate funds by profitability just like any other business",
-   "option_a": "Charitable donations",
-   "option_b": "Government grants",
-   "option_c": "Member premiums",
-   "option_d": "Investment income",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which group in a private health care payer typically has sales responsibilities?",
-   "hint": "That determines the reserves needed for liabilities",
-   "option_a": "Service Operations",
-   "option_b": "Medical Management",
-   "option_c": "Actuarial Department",
-   "option_d": "Plan Operations",
-   "correctAnswer": "c"
- },
- {
-   "questionBody": "Which of the following proteins acts as an energy transducer?",
-   "hint": "They bind the guanine nucleotides GDP and GTP",
-   "option_a": "G-protein.",
-   "option_b": "Bacteriorhodopsin",
-   "option_c": "Hemoglobin.",
-   "option_d": "Heat shock protein",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "What kind of scientist might develop an acne medication that kills pimple-causing bacteria?",
-   "hint": "Is a vast epidermal repository of many disgusting ooziferous",
-   "option_a": "Microbiologist",
-   "option_b": "Acneologist",
-   "option_c": "Minibiologist",
-   "option_d": "Neurologist",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "What equipment is specifically designed for biologics manufacturing?",
-   "hint": "Biologics require sophisticated quality assurance procedures.",
-   "option_a": "High- throughput  screening systems",
-   "option_b": "Bioreactors",
-   "option_c": "Virtual screen systems",
-   "option_d": "Electronic laboratory notebooks",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "Life sciences companies have reduced their number of sales representatives in recent years.",
-   "hint": "Companies reorganized their structure for profitability.",
-   "option_a": "FALSE",
-   "option_b": "TRUE",
-   "option_c": "",
-   "option_d": "",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "What are the challenges faced by life sciences companies?",
-   "hint": "This is challenge changes based on jurisdictions.",
-   "option_a": "Regulators",
-   "option_b": "R&D Costs",
-   "option_c": "Administrative costs",
-   "option_d": "Audit costs",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "How to private payers exert pressure on life sciences companies?",
-   "hint": "Payers decide reimbursement rates to be paid for the drugs.",
-   "option_a": "Private payers are passing regulations to encourage the use of generics",
-   "option_b": "Private payers can prohibit the off-label  usage of prescription drugs",
-   "option_c": "Private payers can unilaterally set the price they will pay for drugs",
-   "option_d": "Private payers decide which drugs are included on their formulary lists",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "Which sales opportunities are related to advances in science and technology within the life sciences industry?",
-   "hint": "Likely to involve social networking, intranets and webportals.",
-   "option_a": "Transaction advisory and tax services to support acquisitions",
-   "option_b": "Business process outsourcing related to contract research",
-   "option_c": "Reporting and performance management systems",
-   "option_d": "Collaboration tools",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "This type of coverage offers more flexibility in choosing doctors and hospitals?",
-   "hint": "Plans are also referred to as \"fee-for-service\" plans",
-   "option_a": "Indemnity Insurance",
-   "option_b": "Coinsurance",
-   "option_c": "Copays Insurance",
-   "option_d": "Individual Insurance",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "MedTech companies are facing new realities, expectations, andsuccess measures in which today?s dynamic disease market",
-   "hint": "Involve the�heart�or blood vessels.",
-   "option_a": "Cardiovascular disease",
-   "option_b": "Cancer",
-   "option_c": "Stroke",
-   "option_d": "Diabetes",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Full form of CVD?",
-   "hint": "Includes coronary artery�diseases�(CAD)",
-   "option_a": "Cardiovascular disease",
-   "option_b": "Cavernoma disease",
-   "option_c": "Cerebrovascular disease",
-   "option_d": "Chorionic villus disease",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "What is refered to the practice of monitoring the effects of drugs after they have been licensed for use",
-   "hint": "Also known as drug safety",
-   "option_a": "Pharmacovigilance",
-   "option_b": "Aetiology",
-   "option_c": "Pathology",
-   "option_d": "Medicovigilance",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "IoT Solutions World Congress(IoTSWC), sponsored by Deloitte was held in which city?",
-   "hint": "Also a professional football club�",
-   "option_a": "Barcelona",
-   "option_b": "Marid",
-   "option_c": "Valencia",
-   "option_d": "Granada",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "What is the Full form of MACRA ?",
-   "hint": "Commonly called the Permanent Doc Fix",
-   "option_a": "Medicare Access and CHIP Reauthorization Act",
-   "option_b": "Medical Access and Care Reauthorization Act",
-   "option_c": "Medicare Access and Care Reestablishment Act",
-   "option_d": "Medical Access and CHIP Reauthorization Act",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Name of medical bills which got failed by US Senate",
+   "questionBody": "A copay is : ",
    "hint": "",
-   "option_a": "American Health Care Act",
-   "option_b": "Better Care Reconciliation Act",
-   "option_c": "Obamacare Repeal and Reconciliation Act.",
-   "option_d": "All of the options",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "According to the International Diabetes Federation, more than 55% of all adults with diabetes live in Which region ?",
-   "hint": "Near the Western�Pacific�Ocean",
-   "option_a": "Asia Pacific",
-   "option_b": "The Middle East",
-   "option_c": "European",
-   "option_d": "America",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Most widely Prescribed drug in 2017",
-   "hint": "Used to treat pain",
-   "option_a": "Vicodin",
-   "option_b": "Synthroid",
-   "option_c": "Delasone",
-   "option_d": "Prinivil",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "In which step are lead compounds altered to make them safer and or more effective?",
-   "hint": "In this stage, compounds undergo ADMET screening.",
-   "option_a": "Target validation",
-   "option_b": "Lead discovery",
-   "option_c": "Target identification",
-   "option_d": "Lead optimizer",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "In what phase of development and testing is a candidate drug tested on a small group of volunteers to test safety of the drug.",
-   "hint": "This test is focused on safety not efficacy of the drug and is performed in hospitals or clinics.",
-   "option_a": "Phase I Testing",
-   "option_b": "Phase II testing",
-   "option_c": "Phase III testing",
-   "option_d": "Phase IV testing",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "What system uses advanced robotics and IT Systems to test hundreds of thousands of compounds against a target to uncover lead compounds?",
-   "hint": "It is a common method for identifying lead compounds today.",
-   "option_a": "High-throughput  screening systems",
-   "option_b": "Bioreactors",
-   "option_c": "Virtual screen systems",
-   "option_d": "Electronic laboratory notebooks",
-   "correctAnswer": "a"
- },
- {
-   "questionBody": "Which executive is most likely to have responsibility for ensuring a company?s manufacturing processes and facilities meet quality standards?",
-   "hint": "These executives are important decision makers or influencers for document management and reporting systems.",
-   "option_a": "Head of Facilities Management",
-   "option_b": "Head of Quality Assurance",
-   "option_c": "Head of Supply chain Management",
-   "option_d": "Head of Ethics Department",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "To pursue sales opportunities within life sciences companies, we have to understand their",
-   "hint": "Take a closer look at how they make money",
-   "option_a": "Business Processes",
-   "option_b": "Business Models",
-   "option_c": "Markets",
-   "option_d": "Competitors",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "The Primary source of expense for life sciences companies include",
-   "hint": "This expense is also referred to as production costs",
-   "option_a": "Product returns",
-   "option_b": "Royalties",
-   "option_c": "Product discounts",
-   "option_d": "Cost of goods sold",
-   "correctAnswer": "d"
- },
- {
-   "questionBody": "For generic drug manufacturers, gross margins are usually higher than branded drug manufacturers.",
-   "hint": "Lower prices are associated with generic drugs.",
-   "option_a": "TRUE",
-   "option_b": "FALSE",
-   "option_c": "",
-   "option_d": "",
-   "correctAnswer": "b"
- },
- {
-   "questionBody": "Operating margin for which of the below company is higher",
-   "hint": "The highest profit margin is usually between 15% and 35%",
-   "option_a": "Biotech firms",
-   "option_b": "Generic drug manufacturers",
-   "option_c": "Pharmaceutical companies",
-   "option_d": "NGO",
+   "option_a": "Part of your deductible",
+   "option_b": "Paid by your insurer",
+   "option_c": "A flat fee for a covered service",
+   "option_d": "None of the above",
    "correctAnswer": "c"
  },
  {
-   "questionBody": "Emerging markets are an important source of the revenue growth for global life sciences companies.",
-   "hint": "Economies are growing dramatically in emerging markets.",
-   "option_a": "TRUE",
-   "option_b": "FALSE",
-   "option_c": "",
-   "option_d": "",
+   "questionBody": "An out-of-pocket maximum is : ",
+   "hint": "",
+   "option_a": "the most you have to pay each year toward your medical services or prescription drugs",
+   "option_b": "A limit on your doctor charges",
+   "option_c": "The most your insurane will pay",
+   "option_d": "None of the above",
    "correctAnswer": "a"
  },
  {
-   "questionBody": "Which is the traditional source of competitive differentiation for big pharma and biotech firms?",
-   "hint": "Companies following this strategy invest heavily in R&D to develop new blockbuster drugs",
-   "option_a": "Low-price provider",
-   "option_b": "Customer/market intimacy",
-   "option_c": "Product Leadership",
-   "option_d": "Emerging markets",
+   "questionBody": "Your insurer may not cover certain tests or procedures unless you first get:",
+   "hint": "",
+   "option_a": "Prior Authorization",
+   "option_b": "Precertification",
+   "option_c": "Prioritization",
+   "option_d": "None of the above",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "___________ feature in Patient Connect indicates where the patient is along the program journey. ",
+   "hint": "",
+   "option_a": "Patient journey timeline ",
+   "option_b": "Activity Timeline ",
+   "option_c": "Service Cases ",
+   "option_d": "Key indicator statuses ",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "__________ feature in Patient Connect contains Log of all historical and upcoming activities. These activities drive the activity list seen on the Support Coordinator home screen. ",
+   "hint": "",
+   "option_a": "Patient journey timeline ",
+   "option_b": "Activity Timeline ",
+   "option_c": "Service Cases ",
+   "option_d": "Key indicator statuses ",
+   "correctAnswer": "b"
+ },
+ {
+   "questionBody": "__________ feature in Patient Connect lists out all sub-cases that capture workflows for the patient, such as Benefits Investigations and Prior Authorizations.",
+   "hint": "",
+   "option_a": "Patient journey timeline ",
+   "option_b": "Activity Timeline ",
+   "option_c": "Service Cases ",
+   "option_d": "Key indicator statuses ",
    "correctAnswer": "c"
  },
  {
-   "questionBody": "The Chief Financial Officer (CFO) is responsible for",
-   "hint": "CFO are important decision makers in portfolio management",
-   "option_a": "Overseeing companies activities",
-   "option_b": "Compensation and benefits programs",
-   "option_c": "Media relations",
-   "option_d": "Tax planning and reporting",
+   "questionBody": "__________ feature in Patient Connect quickly highlights to the Support Coordinator what needs attention for the patient.",
+   "hint": "",
+   "option_a": "Patient journey timeline ",
+   "option_b": "Activity Timeline ",
+   "option_c": "Service Cases ",
+   "option_d": "Key indicator statuses ",
    "correctAnswer": "d"
  },
  {
-   "questionBody": "The chief Executive Officer (CEO) is responsible for",
-   "hint": "CEO is primary decision maker for advisory services related to strategy.",
-   "option_a": "Compensation and benefits programs",
-   "option_b": "Tax planning and reporting",
-   "option_c": "Overseeing company activities",
-   "option_d": "Representing company with major customers, investors and media.",
+   "questionBody": "__________ lets the Support Coordinator quickly initiate workflows while never having to leave the program case page ",
+   "hint": "",
+   "option_a": "Activity Timeline ",
+   "option_b": "Patient Portal",
+   "option_c": "Action Center",
+   "option_d": "None of the above",
+   "correctAnswer": "c"
+ },
+ {
+   "questionBody": "This case is used as the master construct, and other data pertaining to the patient is linked to this case.",
+   "hint": "",
+   "option_a": "Program Case",
+   "option_b": "Service Case",
+   "option_c": "Both a & b",
+   "option_d": "None of the above",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "This object in Patient Connect serves as an inbox/outbox feature for communications sent to and from Patient Connect, includes emails, faxes, and online submitted forms.",
+   "hint": "",
+   "option_a": "Cases",
+   "option_b": "Adverse Event",
+   "option_c": "Document",
+   "option_d": "None of the above",
+   "correctAnswer": "c"
+ },
+ {
+   "questionBody": "Homepage in Patient Connect serves as a one stop shop for Support Coordinators to know about: ",
+   "hint": "",
+   "option_a": "Upcoming tasks",
+   "option_b": "Important alerts",
+   "option_c": "High-level metrics for the patient population they manage ",
+   "option_d": "All of the above",
    "correctAnswer": "d"
  },
  {
-   "questionBody": "Which executive is most likely to have responsibility for manufacturing within a life sciences company?",
-   "hint": "Manufacturing includes supply chain, facilities, IT and HR.",
-   "option_a": "Chief Financial Officer",
-   "option_b": "Chief Operating Officer",
-   "option_c": "President of R&D",
-   "option_d": "President of a Business unit",
+   "questionBody": "A Patient is in pretreatment, and has a completed BI/BV that indicates a PA is required. What is the next step for Support Coordinator to do in Patient Connect?",
+   "hint": "",
+   "option_a": "Goes to the Action Center and begins the prior authorization workflow",
+   "option_b": "Goes to the Action Center and select �Find Pharmacy Plan Details� ",
+   "option_c": "Goes to the Action Center and selects �Book Appointment� ",
+   "option_d": "No next step required.",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "A complete Patient enrollment form has been received. What is the next step for Support Coordinator to do in Patient Connect?",
+   "hint": "",
+   "option_a": "Begin Enrollment for the Patient ",
+   "option_b": "Sends back the form to request patient for Missing Information",
+   "option_c": "Sends back the form to request patient for Missing Signature",
+   "option_d": "No next step required.",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "An enrollment form has been received, but upon opening, Support Coordinator realizes it is missing information. What is the next step for Support Coordinator to do in Patient Connect?",
+   "hint": "",
+   "option_a": "Begin Enrollment for the Patient ",
+   "option_b": "Indicate missing pieces of information and sends back the form to user/ patient.",
+   "option_c": "Goes to the Action Center and begins the prior authorization workflow",
+   "option_d": "No next step required.",
    "correctAnswer": "b"
+ },
+ {
+   "questionBody": "Support Coordinator notices a new alert on its homepage for indicating a patient is at an adherence risk and is due for a field team member to make a house call. What is the next step for Support Coordinator to do in Patient Connect? ",
+   "hint": "",
+   "option_a": "Schedule the house visit via Action Center> �Book Appointment� feature, and the field team member can access Patient Connect via the Salesforce1 Platform ",
+   "option_b": "Call the Caregiver",
+   "option_c": "Ignore the Alert",
+   "option_d": "No next step required.",
+   "correctAnswer": "a"
+ },
+ {
+   "questionBody": "Which of the following best describes features of Patient Portal in Patient Connect?",
+   "hint": "",
+   "option_a": "Shows real-time data for a patient on a specific program ",
+   "option_b": "Patient Journey Timeline with open activity � empowers patient to know where they are in the journey ",
+   "option_c": "Quality of Life Survey results ",
+   "option_d": "All of the above",
+   "correctAnswer": "d"
+ },
+ {
+   "questionBody": "Which of the following best describes features of HCP Portal in Patient Connect?",
+   "hint": "",
+   "option_a": "High level summary graphics that can help provider(HCP) manage their patient's data",
+   "option_b": "Enroll patients ",
+   "option_c": "Verify patient eligibility ",
+   "option_d": "All of the above",
+   "correctAnswer": "d"
+ },
+ {
+   "questionBody": "Which of the following best describes current features of Patient Mobile Application in Patient Connect?",
+   "hint": "",
+   "option_a": "Patient can input daily medication dosages",
+   "option_b": "Patient can set reminders for medication ",
+   "option_c": "Patient can track their symptoms and activities",
+   "option_d": "All of the above",
+   "correctAnswer": "d"
  }
 ]

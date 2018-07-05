@@ -1,23 +1,23 @@
 /**
  * Exposes generic methods that can be used in any service.
  */
-const q=require('./controllers/questionController');
-const fs=require('fs');
+const q = require('./controllers/questionController');
+const fs = require('fs');
 
 module.exports = {
-    shuffleArray : (array) => {
-        let temp = [];
-        let len = array.length;
-        while(len){
-            temp.push(array.splice(Math.floor(Math.random()*array.length),1)[0]);
-            len--;
+    shuffleArray: (array) => {
+        let newArr=[];
+        for(let i=0;i<10;i++){
+            let rand=Math.floor(Math.random()*(array.length-1));
+            console.log(rand);
+            newArr.push(array[rand]);
         }
-        return temp;
+        return newArr;
     },
-    limitTo : (limit, array) => {
-        
+    limitTo: (limit, array) => {
+
         const newAr = [];
-        
+
         array.forEach((val, index) => {
             if (index < limit) {
                 newAr.push(val);

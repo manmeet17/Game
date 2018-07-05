@@ -7,23 +7,38 @@ var quiz = {
 
     showNextQuestion: function () {
         if (questions.length > i) {
+            $('#a').css('display','none');
+            $('#b').css('display','none');
+            $('#c').css('display','none');
+            $('#d').css('display','none');
+
             $('.qBody').text(questions[i].questionBody);
-            $('label#fora').html('<strong>' + questions[i].option_a + '</strong>');
-            $('label#forb').html('<strong>' + questions[i].option_b + '</strong>');
-            $('label#forc').html('<strong>' + questions[i].option_c + '</strong>');
-            $('label#ford').html('<strong>' + questions[i].option_d + '</strong>');
+            if(questions[i].option_a.length!=0){
+                $('#a').css('display','inline-block');
+                $('label#fora').find('strong').text(questions[i].option_a);
+            }
+            if(questions[i].option_b.length!=0){
+                $('#b').css('display','inline-block');
+                $('label#forb').find('strong').text(questions[i].option_b);
+            }
+            if(questions[i].option_c.length!=0){
+                $('#c').css('display','inline-block');
+                $('label#forc').find('strong').text(questions[i].option_c);
+            }
+            if(questions[i].option_d.length!=0){
+                $('#d').css('display','inline-block');
+                $('label#ford').find('strong').text(questions[i].option_d);
+            }
 
             $('label').click(function(e){
                 e.preventDefault()
                 var it=$(this).attr("id");
-                console.log(it[it.length-1]);
                 $('input:radio[id='+it[it.length-1]+']').prop('checked',true);
             });
 
             $('.hintBtn').click(function (e) {
                 e.preventDefault();
                 var hint=questions[i].hint;
-                console.log("Hint : "+hint);
                 if(hint.length!=0)
                     $('.hint').text(hint);
                 else
@@ -39,7 +54,6 @@ var quiz = {
 
     checkAnswer: function () {
         var $selectedOption = $("input[type='radio']:checked");
-        console.log("Q val: " + i);
         if ($selectedOption.length) {
             socket.emit('checkAnswer', {
                 id: questions[i]._id,
@@ -68,14 +82,16 @@ var quiz = {
     },
 
     clearOption: function () {
-        console.log("I value now: "+i);
+        if(i==10){
+            $(".questions").css('display', 'none');
+        }
         $('.questionCounter').attr("src", "../images/assets/" + i + ".png");
         $('input[type="radio"]:checked').prop('checked', false);
         $('.qBody').text('');
-        $('label#fora').html('');
-        $('label#forb').html('');
-        $('label#forc').html('');
-        $('label#ford').html('');
+        $('label#fora').find('strong').text('');
+        $('label#forb').find('strong').text('');
+        $('label#forc').find('strong').text('');
+        $('label#ford').find('strong').text('');
         $('.hint').text('');
         this.showNextQuestion();
     }

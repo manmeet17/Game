@@ -1,5 +1,4 @@
 $(document).on("initialize-game", function () {
-    console.log('Initialized Game'+gameStart);
     stage = new createjs.Stage('game-holder');
     createjs.Touch.enable(stage);
     w = stage.canvas.width;
@@ -243,7 +242,6 @@ $(document).on("initialize-game", function () {
         potHole.x = w - 77;
         potHole.y = h - 85;
         potHole.name = "potHole";
-        console.log("Initial x: " + potHole.x);
     }
 });
 
@@ -252,7 +250,6 @@ $(document).on("initialize-socket", function () {
     socket.on('fetchedQuestions', function(questions, score){
         $("#game").css('display', 'none');
         $(".questions").css('display', 'block');
-        console.log(questions.length);
         quiz.loadQuestions(questions, score);
         quiz.showNextQuestion();
     });
@@ -274,9 +271,13 @@ $(document).on("initialize-socket", function () {
         var healthTo = (currentHealth).toString();
         healthBarSprite.gotoAndStop(healthTo);
         createjs.Sound.volume = 1;
+        if($(window).width()<=1280 || navigator.platform=="Win32"){
+            movingSpeed=4;
+        }else{
+            movingSpeed=8;
+        }
         gamePaused = false;
         cycles++;
-        console.log(cycles);
         if (cycles == 2) {
             gamePaused = true;
             socket.emit('game-over', score, playerId);
@@ -285,7 +286,6 @@ $(document).on("initialize-socket", function () {
 
     socket.on('show-score',function(user){
         location.href = "/game-over/" + playerId;
-        console.log(user);
     });
 });
 
@@ -293,8 +293,12 @@ $(document).on('fire-game',function(e){
         createjs.Ticker.addEventListener("tick", tick);
         gamePaused=true;
         loadSound();
-        if($(window).width()>=1280){
-            movingSpeed=5;   
+        if(navigator.platform=="Win32"){
+            console.log("Playing on Windows");
+        }
+        if($(window).width()>=1280 && navigator.platform!="Win32"){
+            console.log("Playing on Mac");
+            movingSpeed=3;
         }
         createjs.Sound.volume = 0;
         $('.loader').css('visibility','visible');
