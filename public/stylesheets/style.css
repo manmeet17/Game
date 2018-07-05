@@ -92,6 +92,7 @@ canvas {
 
 .list-group-item:nth-child(1) {
     color: white;
+    padding: 0.75rem 30px !important;
     background-color: rgb(255, 215, 0) !important;
     min-width: calc(100% + 20px);
     margin-left: -10px;
@@ -102,6 +103,7 @@ canvas {
 
 .list-group-item:nth-child(2) {
     color: white;
+    padding: 0.75rem 30px !important;
     background-color: rgb(192, 192, 192) !important;
     min-width: calc(100% + 20px);
     margin-left: -10px;
@@ -112,6 +114,7 @@ canvas {
 
 .list-group-item:nth-child(3) {
     color: white;
+    padding: 0.75rem 30px !important;
     min-width: calc(100% + 20px);
     margin-left: -10px;
     background-color: rgb(205,127,50) !important;
