@@ -1,4 +1,4 @@
-function tick(event) {
+var tick = function(event) {
     // initTweens();
     if (!gamePaused) {
         var pt = potHole.localToLocal(0, 0, chair);
