@@ -1,5 +1,6 @@
 $(document).on("initialize-game", function () {
     stage = new createjs.Stage('game-holder');
+    console.log("Canvas: "+stage);
     createjs.Touch.enable(stage);
     w = stage.canvas.width;
     h = stage.canvas.height;
