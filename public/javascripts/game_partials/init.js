@@ -242,6 +242,7 @@ $(document).on("initialize-game", function () {
         potHole.x = w - 77;
         potHole.y = h - 85;
         potHole.name = "potHole";
+        console.log("Pothole is defined: "+potHole.name);
     }
 });
 
