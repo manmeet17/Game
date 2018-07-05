@@ -15,6 +15,7 @@ var reducedHealthFlag1 = false;
 var reducedHealthFlag2 = false;
 var reducedHealthFlag3 = false;
 var gameStart=false;
+potHole=null;
 var currentChannel = {
     "pogo": 1,
     "pogo2":0,
