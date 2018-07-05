@@ -116,22 +116,6 @@ $(document).on("initialize-game", function () {
             }
         });
 
-        var guyWheelchair = new createjs.SpriteSheet({
-            framerate: 30,
-            "images": [loader.getResult("guyWheelchair")],
-            "frames": {
-                "regX": 0,
-                "width": 205,
-                "regY": 0,
-                "height": 200,
-                "count": 62
-            },
-            "animations": {
-                "move": [0, 61, "move", speed * 0.02]
-            }
-        });
-
-
         var pogoStickSprite = new createjs.SpriteSheet({
             framerate: 30,
             "images": [loader.getResult("pogoStick")],
@@ -194,7 +178,6 @@ $(document).on("initialize-game", function () {
         pogo = new createjs.Sprite(pogoStickSprite, "jumpUp");
         pogo2 = new createjs.Sprite(pogoStickSprite2, "jumpUp");
         chair = new createjs.Sprite(chairSprite, "move");
-        guy = new createjs.Sprite(guyWheelchair, "move");
         chair.name = "chair";
         pogo.name = "pogo";
         pogo2.name = "pogo2";

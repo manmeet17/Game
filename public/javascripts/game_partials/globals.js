@@ -66,9 +66,6 @@ var IMAGE_HOLDER = [{
     }, {
         src: "../images/chair.png",
         id: "chair"
-    }, {
-        src: "../images/guyWheelchair.png",
-        id: "guyWheelchair"
     },{
         src: "../images/pogoStick2.png",
         id:"pogoStick2"
