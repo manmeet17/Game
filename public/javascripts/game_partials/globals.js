@@ -9,7 +9,7 @@ var i = 0;
 var correct = 0;
 var playerId;
 var cycles=0;
-var gamePaused=false;
+var gamePaused=true;
 var playerScore=0;
 var reducedHealthFlag1 = false;
 var reducedHealthFlag2 = false;

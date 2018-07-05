@@ -291,7 +291,6 @@ $(document).on("initialize-socket", function () {
 
 $(document).on('fire-game',function(e){
         createjs.Ticker.addEventListener("tick", tick);
-        gamePaused=true;
         loadSound();
         if(navigator.platform=="Win32"){
             console.log("Playing on Windows");
