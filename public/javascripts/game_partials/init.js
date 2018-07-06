@@ -291,4 +291,4 @@ $(document).on('fire-game',function(e){
         gamePaused=false;
         createjs.Sound.volume = 1;
     },3500);
-});
+}); 
