@@ -264,6 +264,7 @@ $(document).on("initialize-socket", function () {
         gamePaused = false;
         cycles++;
         if (cycles == 2) {
+            createjs.Sound.volume = 0;            
             gamePaused = true;
             socket.emit('game-over', score, playerId);
         }

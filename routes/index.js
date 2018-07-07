@@ -104,6 +104,10 @@ router.get('/game-over/:id', (req, res) => {
   userController.getLeaderboard((err, leaders) => {
     if (err) return console.log("Error Getting leaderboard");
     userController.getUserById(id, (err, user) => {
+      if(err) {
+        console.log("Error: "+err);
+        res.redirect('/');
+      }
       let lastScore = user.score[user.score.length - 1];
       console.log("Final Score of User: "+lastScore);
       res.status(200).render('game-over', {

@@ -69,6 +69,7 @@ module.exports = (io) => {
         var saveAttempt = (data) => {
             return new Promise((resolve,reject) =>{
                 userController.getUserById(data.id, (err, user) => {
+                    if(err) reject(err);
                     let score = user.score;
                     score.push(data.score);
                     let newMaxScore = _.max(score);
