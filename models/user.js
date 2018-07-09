@@ -12,7 +12,10 @@ var userSchema=new mongoose.Schema({
     },
     score:[Number],
     personalBest: Number,
-    serviceLine: String
+    serviceLine: {
+        type: String,
+        required: true
+    }
 });
 
 const User=mongoose.model('User',userSchema);

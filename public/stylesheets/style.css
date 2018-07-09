@@ -34,7 +34,7 @@ body {
 .logo {
     position: absolute;
     right: 10px;
-    bottom: 0;
+    bottom: -30px;
 }
 
 .hide {
@@ -43,8 +43,8 @@ body {
 
 .controls {
     position: absolute;
-    bottom: -32px;
-    left: 64%;
+    bottom: -45px;
+    left: 69%;
 }
 
 canvas {
@@ -117,7 +117,7 @@ canvas {
     padding: 0.75rem 30px !important;
     min-width: calc(100% + 20px);
     margin-left: -10px;
-    background-color: rgb(205,127,50) !important;
+    background-color: rgb(205, 127, 50) !important;
     webkit-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.82);
     -moz-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.82);
     box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.82);
