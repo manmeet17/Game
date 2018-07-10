@@ -2,11 +2,12 @@ const User=require('../models/user');
 var mongoose=require('mongoose');
 const utils=require('../utils');
 
-function createUser(name,email,serviceLine,cb){
+function createUser(name,email,serviceLine, location, cb){
     let user=new User({
         name,
         email,
         serviceLine,
+        location
     });
 
     user.save((err) =>{

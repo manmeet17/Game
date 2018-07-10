@@ -15,6 +15,10 @@ var userSchema=new mongoose.Schema({
     serviceLine: {
         type: String,
         required: true
+    },
+    location: {
+        type: String,
+        required: true
     }
 });
 

@@ -3,6 +3,7 @@ var quiz = {
         questions = data;
         playerScore = score;
         playerId = $("#game-holder").data('id');
+        checkingAnswer=false;
     },
 
     showNextQuestion: function () {
@@ -29,7 +30,7 @@ var quiz = {
                 $('#d').css('display','inline-block');
                 $('label#ford').find('strong').text(questions[i].option_d);
             }
-
+            checkingAnswer=false;
             $('label').click(function(e){
                 e.preventDefault()
                 var it=$(this).attr("id");
@@ -44,12 +45,16 @@ var quiz = {
     },
 
     checkAnswer: function () {
+        var $selectedOption = $("input[type='radio']:checked").val();
+        if(!checkingAnswer && $selectedOption!== undefined){
         var $selectedOption = $("input[type='radio']:checked");
-        if ($selectedOption.length) {
-            socket.emit('checkAnswer', {
-                id: questions[i]._id,
-                answer: $selectedOption.val()
-            });
+        checkingAnswer=true;
+            if ($selectedOption.length) {
+                socket.emit('checkAnswer', {
+                    id: questions[i]._id,
+                    answer: $selectedOption.val()
+                });
+            }
         }
     },
 

@@ -3,7 +3,7 @@
 <div class="landing container main custom-form">
     <div class="row">
         <div class="col card default-z login" style="background-color: #2a2a2a;">
-            <p class="text-center" style="color: white;font-size: 25px;margin-top: 5px;">Please provide your information</p>
+            <p class="text-center" style="color: white;font-size: 25px;margin: 5px 0;">Please provide your information</p>
             <form id="credForm">
                 {{!-- Name --}}
                 <div class="form-group">
@@ -22,11 +22,27 @@
                     <label for="serviceLine">Service Line</label>
                     <select name="serviceLine" class="form-control" data-validation="required" data-validation-error-msg="Please select service line"
                         id="serviceLine">
+                        <optgroup>
                         <option selected disabled>Please Choose Service Line</option>
                         <option>Deloitte Digital</option>
                         <option>SAP</option>
                         <option>Oracle</option>
                         <option>System Integration</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <select name="location" class="form-control" data-validation="required" data-validation-error-msg="Please select a location"
+                        id="location">
+                        <optgroup>
+                        <option selected disabled>Please Choose a Location</option>
+                        <option>Hyderabad</option>
+                        <option>Bengaluru</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        </optgroup>
                     </select>
                 </div>
                 <button class="okBtn" class="submit">
@@ -71,8 +87,9 @@
         let name = $("#name").val();
         let email = $("#email").val();
         let serviceLine = $("#serviceLine").val();
+        let loc = $("#location").val();        
         let data = {
-            name, email, serviceLine
+            name, email, serviceLine,loc
         };
         $.ajax({
             url: '/login',
@@ -80,6 +97,7 @@
             method: 'POST',
             cache: false,
             success: function (data) {
+                console.log(data);
                 location.href = "/rules/" + data.player._id;
             },
             error: function (err) {

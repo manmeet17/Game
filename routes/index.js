@@ -27,8 +27,10 @@ router.post('/login', (req, res) => {
         name,
         email,
         serviceLine,
+        loc
     } = req.body;
-    if (name.length == 0 || email.length == 0 || serviceLine.length == 0) {
+    var location=loc;
+    if (name.length == 0 || email.length == 0 || serviceLine.length == 0 || location.length == 0) {
         res.status(400).json({
             message: "Fill all details"
         });
@@ -41,7 +43,7 @@ router.post('/login', (req, res) => {
                     player
                 });
             } else {
-                userController.createUser(name, email, serviceLine, (err, val, player) => {
+                userController.createUser(name, email, serviceLine, location, (err, val, player) => {
                     console.log("createUser");
                     if (err) {
                         return res.status(400).json({

@@ -5,6 +5,7 @@ var score = 00000001;
 var movingSpeed=2.5;
 var level=0;
 var questions;
+var checkingAnswer;
 var i = 0;
 var correct = 0;
 var playerId;
