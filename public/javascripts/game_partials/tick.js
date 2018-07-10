@@ -63,8 +63,13 @@ var tick = function(event) {
 
         score += 1;
         if($(window).width()<=1280 || navigator.platform=="Win32"){
-            if(movingSpeed<=8){
-                movingSpeed+=0.001;
+            if(movingSpeed<=10){
+                // if(score>4000){
+                //     movingSpeed+=0.005;
+                // } else{
+                //     movingSpeed+=0.002;
+                // }
+                movingSpeed+=score/1000000;
             }
         }else{
             if(movingSpeed<=12){

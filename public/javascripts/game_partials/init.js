@@ -9,7 +9,6 @@ $(document).on("initialize-game", function () {
     loader = new createjs.LoadQueue(false);
     loader.addEventListener("complete", handleComplete);
     loader.loadManifest(IMAGE_HOLDER, true, "../images/");
-
     function handleComplete(e) {
         var healthBarImg = loader.getResult("healthBar");
 
@@ -257,7 +256,7 @@ $(document).on("initialize-socket", function () {
         healthBarSprite.gotoAndStop(healthTo);
         createjs.Sound.volume = 1;
         if($(window).width()<=1280 || navigator.platform=="Win32"){
-            movingSpeed=4;
+            movingSpeed=6;
         }else{
             movingSpeed=8;
         }
@@ -287,6 +286,7 @@ $(document).on('fire-game',function(e){
         }
         createjs.Sound.volume = 0;
         $('.loader').css('visibility','visible');
+        debugger;
         setTimeout(function(){
         $('.loader').css('visibility','hidden');
         gamePaused=false;

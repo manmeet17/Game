@@ -64,10 +64,9 @@ router.post('/login', (req, res) => {
 router.get('/rules/:id', (req, res) => {
     if (!(req.params) || !(req.params.id)) {
         console.log("Not found");
-        return res.redirect('/abc');
+        return res.redirect('/');
     }
     let id = req.params.id;
-    console.log("Id is: " + id);
     userController.getLeaderboard((err, leaders) => {
         if (err) {
             console.log("Error getting leaderboard");
@@ -82,28 +81,8 @@ router.get('/rules/:id', (req, res) => {
     });
 });
 
-router.post('/question', (req, res) => {
-    const {
-        qBody,
-        a,
-        b,
-        c,
-        d,
-        ans,
-        hint
-    } = req.body;
-    questionController.createQuestion(qBody, a, b, c, d, ans, hint, (err, val, question) => {
-        if (err) {
-            return res.status(400).json({
-                message: err
-            });
-        } else {
-            return res.status(200).json({
-                message: val,
-                question
-            });
-        }
-    });
+router.get('/rules',(req,res)=>{
+    return res.redirect('/');
 });
 
 router.get('/game-over/:id', (req, res) => {
@@ -124,6 +103,10 @@ router.get('/game-over/:id', (req, res) => {
             });
         });
     });
+});
+
+router.get('/game-over',(req,res)=>{
+    return res.redirect('/');
 });
 
 module.exports = {

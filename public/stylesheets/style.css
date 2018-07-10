@@ -26,6 +26,7 @@ body {
 .loader img {
     margin: 0 auto;
     position: relative;
+    width: 15%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -163,18 +164,6 @@ canvas {
     opacity: 1;
 }
 
-.hintBtn {
-    background-color: #fff;
-    color: gray;
-    font-weight: bold;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    height: 30px;
-    cursor: pointer;
-    float: left;
-    opacity: 1;
-}
-
 .playBtn {
     margin: -5% 1% 0 0;
     position: relative;
@@ -225,11 +214,6 @@ canvas {
     top: -15%;
 }
 
-.hintBtn {
-    position: absolute;
-    bottom: 15px;
-    left: 10px;
-}
 
 .qBody {
     padding: 15px 16px;
@@ -304,13 +288,6 @@ form {
 .landing {
     width: 50vw !important;
     height: 70vh !important;
-}
-
-.hint {
-    width: 500px;
-    position: absolute;
-    bottom: 0;
-    left: 15%;
 }
 
 .game-over button {

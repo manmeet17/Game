@@ -35,15 +35,6 @@ var quiz = {
                 var it=$(this).attr("id");
                 $('input:radio[id='+it[it.length-1]+']').prop('checked',true);
             });
-
-            $('.hintBtn').click(function (e) {
-                e.preventDefault();
-                var hint=questions[i].hint;
-                if(hint.length!=0)
-                    $('.hint').text(hint);
-                else
-                $('.hint').text("Sorry No Hint Available");
-            });
         } else {
             socket.emit("quiz-done", correct, playerScore, playerId);
             i = 0;
@@ -92,7 +83,6 @@ var quiz = {
         $('label#forb').find('strong').text('');
         $('label#forc').find('strong').text('');
         $('label#ford').find('strong').text('');
-        $('.hint').text('');
         this.showNextQuestion();
     }
 }
