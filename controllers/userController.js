@@ -109,7 +109,7 @@ function updateUser(id,newScore,newMaxScore,cb){
  */
 function getLeaderboard(cb){
     //sort the results based on score in descending order.
-    User.find({}).sort('-score.attemptScore').exec(function(err,result){
+    User.find({}).sort('-personalBest').exec(function(err,result){
         if(err) {
             console.log("Error getting leaderboard");
             console.log(err);
