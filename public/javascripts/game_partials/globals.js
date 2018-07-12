@@ -15,7 +15,6 @@ var playerScore=0;
 var reducedHealthFlag1 = false;
 var reducedHealthFlag2 = false;
 var reducedHealthFlag3 = false;
-var gameStart=false;
 potHole=null;
 var currentChannel = {
     "pogo": 1,
@@ -24,6 +23,7 @@ var currentChannel = {
     "chair": 1
 };
 var socket;
+var timer=0;
 var IMAGE_HOLDER = [{
         src: "../images/healthBar.png",
         id: "healthBar"
@@ -75,3 +75,13 @@ var IMAGE_HOLDER = [{
         id: "thunder"
     }
 ];
+
+var startTimer = setInterval(triggerTimer,1000);
+
+function triggerTimer(){
+    timer+=1;
+}
+
+function stopTimer(){
+    clearInterval(startTimer);
+}

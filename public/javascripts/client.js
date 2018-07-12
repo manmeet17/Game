@@ -2,7 +2,6 @@ $(document).ready(function(){
     console.log("Document ready");
     $('.playBtn').click(function(){
         $('.instructions,.playBtn').css("display","none");
-        gameStart=true;
         $(document).trigger('fire-game');
     });
 

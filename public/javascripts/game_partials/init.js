@@ -265,7 +265,8 @@ $(document).on("initialize-socket", function () {
         if (cycles == 2) {
             createjs.Sound.volume = 0;            
             gamePaused = true;
-            socket.emit('game-over', score, playerId);
+            stopTimer();
+            socket.emit('game-over', score, playerId,timer);
         }
     });
 
@@ -286,10 +287,10 @@ $(document).on('fire-game',function(e){
         }
         createjs.Sound.volume = 0;
         $('.loader').css('visibility','visible');
-        debugger;
         setTimeout(function(){
         $('.loader').css('visibility','hidden');
         gamePaused=false;
         createjs.Sound.volume = 1;
+        triggerTimer();
     },3500);
 }); 

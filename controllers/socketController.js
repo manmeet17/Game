@@ -5,13 +5,10 @@ const utils = require('../utils')
 
 module.exports = (io) => {
     io.on("connection", (socket) => {
-
-        socket.score = 0;
         socket.correct = 0;
         socket.attempted = 0;
+        socket.totalCorrect = 0;
         socket.on("crash", (score) => {
-            console.log("Socket score: ");
-            console.log(score);
             questionsController.getLimitedQuestions((err, questions) => {
                 if (err) return console.log("Error getting questions" + err);
                 console.log("Questions length: " + questions.length);
@@ -31,10 +28,11 @@ module.exports = (io) => {
 
         socket.on('checkAnswer', (data) => {
             questionsController.checkAnswer(data.id, data.answer, (err, resp) => {
-                if (resp.answeredCorrect)
+                if (resp.answeredCorrect){
                     socket.correct++;
+                    socket.totalCorrect++;
+                }
                 socket.attempted++;
-                console.log(resp);
                 socket.emit('answer', resp);
             });
         });
@@ -42,10 +40,6 @@ module.exports = (io) => {
         socket.on('quiz-done', (correct, playerScore, playerId) => {
             if (correct != socket.correct)
                 socket.emit('mismatch');
-            console.log("Quiz Done: " + correct + " " + socket.correct);
-            console.log("Attempts: " + socket.attempted);
-            console.log("Id is: " + playerId);
-            console.log("Score Before: "+playerScore);
             let data = {
                 id: playerId,
                 score: Math.floor(playerScore+(playerScore*(correct)/10))
@@ -56,10 +50,12 @@ module.exports = (io) => {
             socket.attempted = 0;
         });
 
-        socket.on('game-over',(score,playerId) =>{
+        socket.on('game-over',(score,playerId,timer) =>{
             let data={
                 id: playerId,
-                score: score
+                score: score,
+                timer: timer,
+                totalCorrect: socket.totalCorrect
             }
             saveAttempt(data).then((resp)=>{
                 socket.emit('show-score',resp);
@@ -71,8 +67,13 @@ module.exports = (io) => {
                 userController.getUserById(data.id, (err, user) => {
                     if(err) reject(err);
                     let score = user.score;
-                    score.push(data.score);
-                    let newMaxScore = _.max(score);
+                    let attempt={
+                        attemptScore: data.score,
+                        time: data.timer,
+                        totalCorrect: data.totalCorrect
+                    }
+                    score.push(attempt);
+                    let newMaxScore = _.max(score.map(x => x.attemptScore));
                     userController.updateUser(data.id, score, newMaxScore, (err, resp) => {
                         if (err) return reject(err);
                         else resolve(resp);

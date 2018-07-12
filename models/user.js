@@ -10,8 +10,18 @@ var userSchema=new mongoose.Schema({
         required: true,
         unique: true
     },
-    score:[Number],
-    personalBest: Number,
+    score:[{
+        attemptScore: {
+            type: Number,
+            default: 0
+        },
+        time: Number,
+        totalCorrect: Number
+    }],
+    personalBest: {
+        type: Number,
+        default: 0
+    },
     serviceLine: {
         type: String,
         required: true
